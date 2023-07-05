@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport"
+    content="height=device-height, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <link rel="manifest" href="/manifest.json">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#0e1023">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#0e1023">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0e1023">
+  <!-- facebook domain verification-->
+  <meta name="facebook-domain-verification" content="uvkl53gh6fjue9iqa3p3m03wz957j5">
+
+  <meta charset="UTF-8">
+  <script
+    type="text/javascript">(window.NREUM || (NREUM = {})).init = { ajax: { deny_list: ["bam.eu01.nr-data.net"] } }; (window.NREUM || (NREUM = {})).loader_config = { licenseKey: "NRJS-975c7885532d44c79eb", applicationID: "102821505" };; (() => { "use strict"; var e, t, n = { 8768: (e, t, n) => { n.d(t, { T: () => r, p: () => i }); const r = /(iPad|iPhone|iPod)/g.test(navigator.userAgent), i = r && Boolean("undefined" == typeof SharedWorker) }, 880: (e, t, n) => { n.d(t, { P_: () => f, Mt: () => p, C5: () => s, DL: () => m, OP: () => _, lF: () => E, Yu: () => y, Dg: () => g, CX: () => c, GE: () => b, sU: () => j }); var r = n(6797), i = n(4286); const o = { beacon: r.ce.beacon, errorBeacon: r.ce.errorBeacon, licenseKey: void 0, applicationID: void 0, sa: void 0, queueTime: void 0, applicationTime: void 0, ttGuid: void 0, user: void 0, account: void 0, product: void 0, extra: void 0, jsAttributes: {}, userAttributes: void 0, atts: void 0, transactionName: void 0, tNamePlain: void 0 }, a = {}; function s(e) { if (!e) throw new Error("All info objects require an agent identifier!"); if (!a[e]) throw new Error("Info for ".concat(e, " was never set")); return a[e] } function c(e, t) { if (!e) throw new Error("All info objects require an agent identifier!"); a[e] = (0, i.D)(t, o), (0, r.Qy)(e, a[e], "info") } var u = n(2797); const d = () => { const e = { blockSelector: "[data-nr-block]", maskInputOptions: { password: !0 } }; return { allow_bfcache: !0, privacy: { cookies_enabled: !0 }, ajax: { deny_list: void 0, enabled: !0, harvestTimeSeconds: 10 }, distributed_tracing: { enabled: void 0, exclude_newrelic_header: void 0, cors_use_newrelic_header: void 0, cors_use_tracecontext_headers: void 0, allowed_origins: void 0 }, session: { domain: void 0, expiresMs: u.oD, inactiveMs: u.Hb }, ssl: void 0, obfuscate: void 0, jserrors: { enabled: !0, harvestTimeSeconds: 10 }, metrics: { enabled: !0 }, page_action: { enabled: !0, harvestTimeSeconds: 30 }, page_view_event: { enabled: !0 }, page_view_timing: { enabled: !0, harvestTimeSeconds: 30, long_task: !1 }, session_trace: { enabled: !0, harvestTimeSeconds: 10 }, session_replay: { enabled: !1, harvestTimeSeconds: 60, sampleRate: .1, errorSampleRate: .1, maskTextSelector: "*", maskAllInputs: !0, get blockClass() { return "nr-block" }, get ignoreClass() { return "nr-ignore" }, get maskTextClass() { return "nr-mask" }, get blockSelector() { return e.blockSelector }, set blockSelector(t) { e.blockSelector += ",".concat(t) }, get maskInputOptions() { return e.maskInputOptions }, set maskInputOptions(t) { e.maskInputOptions = { ...t, password: !0 } } }, spa: { enabled: !0, harvestTimeSeconds: 10 } } }, l = {}; function f(e) { if (!e) throw new Error("All configuration objects require an agent identifier!"); if (!l[e]) throw new Error("Configuration for ".concat(e, " was never set")); return l[e] } function g(e, t) { if (!e) throw new Error("All configuration objects require an agent identifier!"); l[e] = (0, i.D)(t, d()), (0, r.Qy)(e, l[e], "config") } function p(e, t) { if (!e) throw new Error("All configuration objects require an agent identifier!"); var n = f(e); if (n) { for (var r = t.split("."), i = 0; i < r.length - 1; i++)if ("object" != typeof (n = n[r[i]])) return; n = n[r[r.length - 1]] } return n } const h = { accountID: void 0, trustKey: void 0, agentID: void 0, licenseKey: void 0, applicationID: void 0, xpid: void 0 }, v = {}; function m(e) { if (!e) throw new Error("All loader-config objects require an agent identifier!"); if (!v[e]) throw new Error("LoaderConfig for ".concat(e, " was never set")); return v[e] } function b(e, t) { if (!e) throw new Error("All loader-config objects require an agent identifier!"); v[e] = (0, i.D)(t, h), (0, r.Qy)(e, v[e], "loader_config") } const y = (0, r.mF)().o; var w = n(2374), A = n(1651); const x = { buildEnv: A.Re, bytesSent: {}, queryBytesSent: {}, customTransaction: void 0, disabled: !1, distMethod: A.gF, isolatedBacklog: !1, loaderType: void 0, maxBytes: 3e4, offset: Math.floor(w._A?.performance?.timeOrigin || w._A?.performance?.timing?.navigationStart || Date.now()), onerror: void 0, origin: "" + w._A.location, ptid: void 0, releaseIds: {}, session: void 0, xhrWrappable: "function" == typeof w._A.XMLHttpRequest?.prototype?.addEventListener, version: A.q4 }, D = {}; function _(e) { if (!e) throw new Error("All runtime objects require an agent identifier!"); if (!D[e]) throw new Error("Runtime for ".concat(e, " was never set")); return D[e] } function j(e, t) { if (!e) throw new Error("All runtime objects require an agent identifier!"); D[e] = (0, i.D)(t, x), (0, r.Qy)(e, D[e], "runtime") } function E(e) { return function (e) { try { const t = s(e); return !!t.licenseKey && !!t.errorBeacon && !!t.applicationID } catch (e) { return !1 } }(e) } }, 4286: (e, t, n) => { n.d(t, { D: () => i }); var r = n(8610); function i(e, t) { try { if (!e || "object" != typeof e) return (0, r.Z)("Setting a Configurable requires an object as input"); if (!t || "object" != typeof t) return (0, r.Z)("Setting a Configurable requires a model to set its initial properties"); const n = Object.create(Object.getPrototypeOf(t), Object.getOwnPropertyDescriptors(t)), o = 0 === Object.keys(n).length ? e : n; for (let a in o) if (void 0 !== e[a]) try { "object" == typeof e[a] && "object" == typeof t[a] ? n[a] = i(e[a], t[a]) : n[a] = e[a] } catch (e) { (0, r.Z)("An error occurred while setting a property of a Configurable", e) } return n } catch (e) { (0, r.Z)("An error occured while setting a Configurable", e) } } }, 1651: (e, t, n) => { n.d(t, { Re: () => i, gF: () => o, q4: () => r }); const r = "1.234.0", i = "PROD", o = "CDN" }, 9557: (e, t, n) => { n.d(t, { w: () => o }); var r = n(8610); const i = { agentIdentifier: "", ee: void 0 }; class o { constructor(e) { try { if ("object" != typeof e) return (0, r.Z)("shared context requires an object as input"); this.sharedContext = {}, Object.assign(this.sharedContext, i), Object.entries(e).forEach((e => { let [t, n] = e; Object.keys(i).includes(t) && (this.sharedContext[t] = n) })) } catch (e) { (0, r.Z)("An error occured while setting SharedContext", e) } } } }, 4329: (e, t, n) => { n.d(t, { L: () => d, R: () => c }); var r = n(3752), i = n(7022), o = n(4045), a = n(2325); const s = {}; function c(e, t) { const n = { staged: !1, priority: a.p[t] || 0 }; u(e), s[e].get(t) || s[e].set(t, n) } function u(e) { e && (s[e] || (s[e] = new Map)) } function d() { let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "", t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "feature"; if (u(e), !e || !s[e].get(t)) return a(t); s[e].get(t).staged = !0; const n = [...s[e]]; function a(t) { const n = e ? r.ee.get(e) : r.ee, a = o.X.handlers; if (n.backlog && a) { var s = n.backlog[t], c = a[t]; if (c) { for (var u = 0; s && u < s.length; ++u)l(s[u], c); (0, i.D)(c, (function (e, t) { (0, i.D)(t, (function (t, n) { n[0].on(e, n[1]) })) })) } delete a[t], n.backlog[t] = null, n.emit("drain-" + t, []) } } n.every((e => { let [t, n] = e; return n.staged })) && (n.sort(((e, t) => e[1].priority - t[1].priority)), n.forEach((e => { let [t] = e; a(t) }))) } function l(e, t) { var n = e[1]; (0, i.D)(t[n], (function (t, n) { var r = e[0]; if (n[0] === r) { var i = n[1], o = e[3], a = e[2]; i.apply(o, a) } })) } }, 3752: (e, t, n) => { n.d(t, { ee: () => u }); var r = n(6797), i = n(3916), o = n(7022), a = n(880), s = "nr@context"; let c = (0, r.fP)(); var u; function d() { } function l() { return new d } function f() { u.aborted = !0, u.backlog = {} } c.ee ? u = c.ee : (u = function e(t, n) { var r = {}, c = {}, g = {}, p = !1; try { p = 16 === n.length && (0, a.OP)(n).isolatedBacklog } catch (e) { } var h = { on: b, addEventListener: b, removeEventListener: y, emit: m, get: A, listeners: w, context: v, buffer: x, abort: f, aborted: !1, isBuffering: D, debugId: n, backlog: p ? {} : t && "object" == typeof t.backlog ? t.backlog : {} }; return h; function v(e) { return e && e instanceof d ? e : e ? (0, i.X)(e, s, l) : l() } function m(e, n, r, i, o) { if (!1 !== o && (o = !0), !u.aborted || i) { t && o && t.emit(e, n, r); for (var a = v(r), s = w(e), d = s.length, l = 0; l < d; l++)s[l].apply(a, n); var f = _()[c[e]]; return f && f.push([h, e, n, a]), a } } function b(e, t) { r[e] = w(e).concat(t) } function y(e, t) { var n = r[e]; if (n) for (var i = 0; i < n.length; i++)n[i] === t && n.splice(i, 1) } function w(e) { return r[e] || [] } function A(t) { return g[t] = g[t] || e(h, t) } function x(e, t) { var n = _(); h.aborted || (0, o.D)(e, (function (e, r) { t = t || "feature", c[r] = t, t in n || (n[t] = []) })) } function D(e) { return !!_()[c[e]] } function _() { return h.backlog } }(void 0, "globalEE"), c.ee = u) }, 9252: (e, t, n) => { n.d(t, { E: () => r, p: () => i }); var r = n(3752).ee.get("handle"); function i(e, t, n, i, o) { o ? (o.buffer([e], i), o.emit(e, t, n)) : (r.buffer([e], i), r.emit(e, t, n)) } }, 4045: (e, t, n) => { n.d(t, { X: () => o }); var r = n(9252); o.on = a; var i = o.handlers = {}; function o(e, t, n, o) { a(o || r.E, i, e, t, n) } function a(e, t, n, i, o) { o || (o = "feature"), e || (e = r.E); var a = t[o] = t[o] || {}; (a[n] = a[n] || []).push([e, i]) } }, 8544: (e, t, n) => { n.d(t, { bP: () => s, iz: () => c, m$: () => a }); var r = n(2374); let i = !1, o = !1; try { const e = { get passive() { return i = !0, !1 }, get signal() { return o = !0, !1 } }; r._A.addEventListener("test", null, e), r._A.removeEventListener("test", null, e) } catch (e) { } function a(e, t) { return i || o ? { capture: !!e, passive: i, signal: t } : !!e } function s(e, t) { let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2], r = arguments.length > 3 ? arguments[3] : void 0; window.addEventListener(e, t, a(n, r)) } function c(e, t) { let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2], r = arguments.length > 3 ? arguments[3] : void 0; document.addEventListener(e, t, a(n, r)) } }, 5526: (e, t, n) => { n.d(t, { Rl: () => a, ky: () => s }); var r = n(2374); const i = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx"; function o(e, t) { return e ? 15 & e[t] : 16 * Math.random() | 0 } function a() { const e = r._A?.crypto || r._A?.msCrypto; let t, n = 0; return e && e.getRandomValues && (t = e.getRandomValues(new Uint8Array(31))), i.split("").map((e => "x" === e ? o(t, ++n).toString(16) : "y" === e ? (3 & o() | 8).toString(16) : e)).join("") } function s(e) { const t = r._A?.crypto || r._A?.msCrypto; let n, i = 0; t && t.getRandomValues && (n = t.getRandomValues(new Uint8Array(31))); const a = []; for (var s = 0; s < e; s++)a.push(o(n, ++i).toString(16)); return a.join("") } }, 2797: (e, t, n) => { n.d(t, { Bq: () => r, Hb: () => o, oD: () => i }); const r = "NRBA", i = 144e5, o = 18e5 }, 2053: (e, t, n) => { function r() { return Math.round(performance.now()) } n.d(t, { z: () => r }) }, 8610: (e, t, n) => { function r(e, t) { "function" == typeof console.warn && (console.warn("New Relic: ".concat(e)), t && console.warn(t)) } n.d(t, { Z: () => r }) }, 7269: (e, t, n) => { n.d(t, { N: () => u, T: () => d }); var r = n(7022), i = n(3752), o = n(9252), a = n(4329), s = n(2325); const c = { stn: [s.D.sessionTrace], err: [s.D.jserrors, s.D.metrics], ins: [s.D.pageAction], spa: [s.D.spa], sr: [s.D.sessionReplay] }; function u(e, t) { var n = i.ee.get(t); e && "object" == typeof e && ((0, r.D)(e, (function (e, t) { if (!t) return (c[e] || []).forEach((t => { (0, o.p)("block-" + e, [], void 0, t, n) })); d[e] || ((0, o.p)("feat-" + e, [], void 0, c[e], n), d[e] = !0) })), (0, a.L)(t, s.D.pageViewEvent)) } const d = {} }, 3916: (e, t, n) => { n.d(t, { X: () => i }); var r = Object.prototype.hasOwnProperty; function i(e, t, n) { if (r.call(e, t)) return e[t]; var i = n(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, t, { value: i, writable: !0, enumerable: !1 }), i } catch (e) { } return e[t] = i, i } }, 2374: (e, t, n) => { n.d(t, { FN: () => a, _A: () => o, il: () => r, v6: () => i }); const r = Boolean("undefined" != typeof window && window.document), i = Boolean("undefined" != typeof WorkerGlobalScope && self.navigator instanceof WorkerNavigator); let o = (() => { if (r) return window; if (i) { if ("undefined" != typeof globalThis && globalThis instanceof WorkerGlobalScope) return globalThis; if (self instanceof WorkerGlobalScope) return self } throw new Error('New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like "self" and "window".') })(); const a = "" + o.location }, 7022: (e, t, n) => { n.d(t, { D: () => r }); const r = (e, t) => Object.entries(e || {}).map((e => { let [n, r] = e; return t(n, r) })) }, 2438: (e, t, n) => { n.d(t, { P: () => o }); var r = n(3752); const i = () => { const e = new WeakSet; return (t, n) => { if ("object" == typeof n && null !== n) { if (e.has(n)) return; e.add(n) } return n } }; function o(e) { try { return JSON.stringify(e, i()) } catch (e) { try { r.ee.emit("internal-error", [e]) } catch (e) { } } } }, 2650: (e, t, n) => { n.d(t, { K: () => a, b: () => o }); var r = n(8544); function i() { return "undefined" == typeof document || "complete" === document.readyState } function o(e, t) { if (i()) return e(); (0, r.bP)("load", e, t) } function a(e) { if (i()) return e(); (0, r.iz)("DOMContentLoaded", e) } }, 6797: (e, t, n) => { n.d(t, { EZ: () => u, Qy: () => c, ce: () => o, fP: () => a, gG: () => d, mF: () => s }); var r = n(2053), i = n(2374); const o = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net" }; function a() { return i._A.NREUM || (i._A.NREUM = {}), void 0 === i._A.newrelic && (i._A.newrelic = i._A.NREUM), i._A.NREUM } function s() { let e = a(); return e.o || (e.o = { ST: i._A.setTimeout, SI: i._A.setImmediate, CT: i._A.clearTimeout, XHR: i._A.XMLHttpRequest, REQ: i._A.Request, EV: i._A.Event, PR: i._A.Promise, MO: i._A.MutationObserver, FETCH: i._A.fetch }), e } function c(e, t, n) { let i = a(); const o = i.initializedAgents || {}, s = o[e] || {}; return Object.keys(s).length || (s.initializedAt = { ms: (0, r.z)(), date: new Date }), i.initializedAgents = { ...o, [e]: { ...s, [n]: t } }, i } function u(e, t) { a()[e] = t } function d() { return function () { let e = a(); const t = e.info || {}; e.info = { beacon: o.beacon, errorBeacon: o.errorBeacon, ...t } }(), function () { let e = a(); const t = e.init || {}; e.init = { ...t } }(), s(), function () { let e = a(); const t = e.loader_config || {}; e.loader_config = { ...t } }(), a() } }, 6998: (e, t, n) => { n.d(t, { N: () => i }); var r = n(8544); function i(e) { let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], n = arguments.length > 2 ? arguments[2] : void 0, i = arguments.length > 3 ? arguments[3] : void 0; return void (0, r.iz)("visibilitychange", (function () { if (t) return void ("hidden" == document.visibilityState && e()); e(document.visibilityState) }), n, i) } }, 6034: (e, t, n) => { n.d(t, { gF: () => o, mY: () => i, t9: () => r, vz: () => s, xS: () => a }); const r = n(2325).D.metrics, i = "sm", o = "cm", a = "storeSupportabilityMetrics", s = "storeEventMetrics" }, 2484: (e, t, n) => { n.d(t, { Dz: () => i, OJ: () => a, qw: () => o, t9: () => r }); const r = n(2325).D.pageViewEvent, i = "firstbyte", o = "domcontent", a = "windowload" }, 6382: (e, t, n) => { n.d(t, { t: () => r }); const r = n(2325).D.pageViewTiming }, 1509: (e, t, n) => { n.d(t, { W: () => o }); var r = n(880), i = n(3752); class o { constructor(e, t, n) { this.agentIdentifier = e, this.aggregator = t, this.ee = i.ee.get(e, (0, r.OP)(this.agentIdentifier).isolatedBacklog), this.featureName = n, this.blocked = !1 } } }, 3975: (e, t, n) => { n.d(t, { j: () => v }); var r = n(2325), i = n(880), o = n(9252), a = n(3752), s = n(2053), c = n(4329), u = n(2650), d = n(2374), l = n(8610), f = n(6034), g = n(6797); function p() { const e = (0, g.gG)();["setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease", "addPageAction", "setCurrentRouteName", "setPageViewName", "setCustomAttribute", "interaction", "noticeError", "setUserId"].forEach((t => { e[t] = function () { for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++)r[i] = arguments[i]; return function (t) { for (var n = arguments.length, r = new Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++)r[i - 1] = arguments[i]; let o = []; return Object.values(e.initializedAgents).forEach((e => { e.exposed && e.api[t] && o.push(e.api[t](...r)) })), o.length > 1 ? o : o[0] }(t, ...r) } })) } var h = n(7269); function v(e) { let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, v = arguments.length > 2 ? arguments[2] : void 0, m = arguments.length > 3 ? arguments[3] : void 0, { init: b, info: y, loader_config: w, runtime: A = { loaderType: v }, exposed: x = !0 } = t; const D = (0, g.gG)(); y || (b = D.init, y = D.info, w = D.loader_config), (0, i.Dg)(e, b || {}), (0, i.GE)(e, w || {}), (0, i.sU)(e, A), y.jsAttributes ??= {}, d.v6 && (y.jsAttributes.isWorker = !0), (0, i.CX)(e, y), p(); const _ = function (e, t) { t || (0, c.R)(e, "api"); const g = {}; var p = a.ee.get(e), h = p.get("tracer"), v = "api-", m = v + "ixn-"; function b(t, n, r, o) { const a = (0, i.C5)(e); return null === n ? delete a.jsAttributes[t] : (0, i.CX)(e, { ...a, jsAttributes: { ...a.jsAttributes, [t]: n } }), A(v, r, !0, o || null === n ? "session" : void 0)(t, n) } function y() { } ["setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"].forEach((e => g[e] = A(v, e, !0, "api"))), g.addPageAction = A(v, "addPageAction", !0, r.D.pageAction), g.setCurrentRouteName = A(v, "routeName", !0, r.D.spa), g.setPageViewName = function (t, n) { if ("string" == typeof t) return "/" !== t.charAt(0) && (t = "/" + t), (0, i.OP)(e).customTransaction = (n || "http://custom.transaction") + t, A(v, "setPageViewName", !0)() }, g.setCustomAttribute = function (e, t) { let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]; if ("string" == typeof e) { if (["string", "number"].includes(typeof t) || null === t) return b(e, t, "setCustomAttribute", n); (0, l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t, "> was provided.")) } else (0, l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e, "> was provided.")) }, g.setUserId = function (e) { if ("string" == typeof e || null === e) return b("enduser.id", e, "setUserId", !0); (0, l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e, "> was provided.")) }, g.interaction = function () { return (new y).get() }; var w = y.prototype = { createTracer: function (e, t) { var n = {}, i = this, a = "function" == typeof t; return (0, o.p)(m + "tracer", [(0, s.z)(), e, n], i, r.D.spa, p), function () { if (h.emit((a ? "" : "no-") + "fn-start", [(0, s.z)(), i, a], n), a) try { return t.apply(this, arguments) } catch (e) { throw h.emit("fn-err", [arguments, this, "string" == typeof e ? new Error(e) : e], n), e } finally { h.emit("fn-end", [(0, s.z)()], n) } } } }; function A(e, t, n, i) { return function () { return (0, o.p)(f.xS, ["API/" + t + "/called"], void 0, r.D.metrics, p), i && (0, o.p)(e + t, [(0, s.z)(), ...arguments], n ? null : this, i, p), n ? void 0 : this } } function x() { n.e(439).then(n.bind(n, 5692)).then((t => { let { setAPI: n } = t; n(e), (0, c.L)(e, "api") })).catch((() => (0, l.Z)("Downloading runtime APIs failed..."))) } return ["actionText", "setName", "setAttribute", "save", "ignore", "onEnd", "getContext", "end", "get"].forEach((e => { w[e] = A(m, e, void 0, r.D.spa) })), g.noticeError = function (e, t) { "string" == typeof e && (e = new Error(e)), (0, o.p)(f.xS, ["API/noticeError/called"], void 0, r.D.metrics, p), (0, o.p)("err", [e, (0, s.z)(), !1, t], void 0, r.D.jserrors, p) }, d.v6 ? x() : (0, u.b)((() => x()), !0), g }(e, m); return (0, g.Qy)(e, _, "api"), (0, g.Qy)(e, x, "exposed"), (0, g.EZ)("activatedFeatures", h.T), _ } }, 2325: (e, t, n) => { n.d(t, { D: () => r, p: () => i }); const r = { ajax: "ajax", jserrors: "jserrors", metrics: "metrics", pageAction: "page_action", pageViewEvent: "page_view_event", pageViewTiming: "page_view_timing", sessionReplay: "session_replay", sessionTrace: "session_trace", spa: "spa" }, i = { [r.pageViewEvent]: 1, [r.pageViewTiming]: 2, [r.metrics]: 3, [r.jserrors]: 4, [r.ajax]: 5, [r.sessionTrace]: 6, [r.pageAction]: 7, [r.spa]: 8, [r.sessionReplay]: 9 } } }, r = {}; function i(e) { var t = r[e]; if (void 0 !== t) return t.exports; var o = r[e] = { exports: {} }; return n[e](o, o.exports, i), o.exports } i.m = n, i.d = (e, t) => { for (var n in t) i.o(t, n) && !i.o(e, n) && Object.defineProperty(e, n, { enumerable: !0, get: t[n] }) }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((t, n) => (i.f[n](e, t), t)), [])), i.u = e => (({ 78: "page_action-aggregate", 147: "metrics-aggregate", 193: "session_trace-aggregate", 242: "session-manager", 317: "jserrors-aggregate", 348: "page_view_timing-aggregate", 412: "lazy-feature-loader", 439: "async-api", 538: "recorder", 590: "session_replay-aggregate", 675: "compressor", 786: "page_view_event-aggregate", 873: "spa-aggregate", 898: "ajax-aggregate" }[e] || e) + "." + { 78: "e03e2220", 147: "75d6a08d", 193: "715c3096", 242: "9219a813", 286: "d701d70f", 317: "8c74e315", 348: "ad791b05", 412: "fe5af5d1", 439: "bbe52263", 538: "1b18459f", 590: "36b41a12", 646: "c6971123", 675: "ae9f91a8", 786: "e157f7ce", 873: "e1bcad73", 898: "716f46cf" }[e] + "-1.234.0.min.js"), i.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, t = "NRBA:", i.l = (n, r, o, a) => { if (e[n]) e[n].push(r); else { var s, c; if (void 0 !== o) for (var u = document.getElementsByTagName("script"), d = 0; d < u.length; d++) { var l = u[d]; if (l.getAttribute("src") == n || l.getAttribute("data-webpack") == t + o) { s = l; break } } s || (c = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", t + o), s.src = n), e[n] = [r]; var f = (t, r) => { s.onerror = s.onload = null, clearTimeout(g); var i = e[n]; if (delete e[n], s.parentNode && s.parentNode.removeChild(s), i && i.forEach((e => e(r))), t) return t(r) }, g = setTimeout(f.bind(null, void 0, { type: "timeout", target: s }), 12e4); s.onerror = f.bind(null, s.onerror), s.onload = f.bind(null, s.onload), c && document.head.appendChild(s) } }, i.r = e => { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, i.j = 35, i.p = "https://js-agent.newrelic.com/", (() => { var e = { 35: 0, 266: 0 }; i.f.j = (t, n) => { var r = i.o(e, t) ? e[t] : void 0; if (0 !== r) if (r) n.push(r[2]); else { var o = new Promise(((n, i) => r = e[t] = [n, i])); n.push(r[2] = o); var a = i.p + i.u(t), s = new Error; i.l(a, (n => { if (i.o(e, t) && (0 !== (r = e[t]) && (e[t] = void 0), r)) { var o = n && ("load" === n.type ? "missing" : n.type), a = n && n.target && n.target.src; s.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", s.name = "ChunkLoadError", s.type = o, s.request = a, r[1](s) } }), "chunk-" + t, t) } }; var t = (t, n) => { var r, o, [a, s, c] = n, u = 0; if (a.some((t => 0 !== e[t]))) { for (r in s) i.o(s, r) && (i.m[r] = s[r]); if (c) c(i) } for (t && t(n); u < a.length; u++)o = a[u], i.o(e, o) && e[o] && e[o][0](), e[o] = 0 }, n = window.webpackChunkNRBA = window.webpackChunkNRBA || []; n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n)) })(); var o = {}; (() => { i.r(o); var e = i(2325), t = i(880); const n = Object.values(e.D); function r(e) { const r = {}; return n.forEach((n => { r[n] = function (e, n) { return !1 !== (0, t.Mt)(n, "".concat(e, ".enabled")) }(n, e) })), r } var a = i(3975); var s = i(9252), c = i(8768), u = i(4329), d = i(1509), l = i(2650), f = i(2374), g = i(8610); class p extends d.W { constructor(e, t, n) { let r = !(arguments.length > 3 && void 0 !== arguments[3]) || arguments[3]; super(e, t, n), this.hasAggregator = !1, this.auto = r, this.abortHandler, r && (0, u.R)(e, n) } importAggregator(n) { if (this.hasAggregator || !this.auto) return; let r, o; this.hasAggregator = !0, !0 !== (0, t.Mt)(this.agentIdentifier, "privacy.cookies_enabled") || f.v6 || (o = Promise.all([i.e(286), i.e(242)]).then(i.bind(i, 3289)).catch((e => { (0, g.Z)("failed to import the session manager", e) }))); const a = async () => { try { if (o && !r) { const { setupAgentSession: e } = await o; r = e(this.agentIdentifier) } if (!function (t, n) { return t !== e.D.sessionReplay || (!!n?.isNew || !!n?.state.sessionReplayActive) }(this.featureName, r)) return void (0, u.L)(this.agentIdentifier, this.featureName); const { lazyFeatureLoader: t } = await i.e(412).then(i.bind(i, 3160)), { Aggregate: a } = await t(this.featureName, "aggregate"); new a(this.agentIdentifier, this.aggregator, n) } catch (e) { (0, g.Z)("Downloading ".concat(this.featureName, " failed..."), e), this.abortHandler?.() } }; f.v6 ? a() : (0, l.b)((() => a()), !0) } } var h = i(2484), v = i(2053); class m extends p { static featureName = h.t9; constructor(n, r) { let i = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; if (super(n, r, h.t9, i), ("undefined" == typeof PerformanceNavigationTiming || c.T) && "undefined" != typeof PerformanceTiming) { const r = (0, t.OP)(n); r[h.Dz] = Math.max(Date.now() - r.offset, 0), (0, l.K)((() => r[h.qw] = Math.max((0, v.z)() - r[h.Dz], 0))), (0, l.b)((() => { const t = (0, v.z)(); r[h.OJ] = Math.max(t - r[h.Dz], 0), (0, s.p)("timing", ["load", t], void 0, e.D.pageViewTiming, this.ee) })) } this.importAggregator() } } var b = i(9557), y = i(7022); class w extends b.w { constructor(e) { super(e), this.aggregatedData = {} } store(e, t, n, r, i) { var o = this.getBucket(e, t, n, i); return o.metrics = function (e, t) { t || (t = { count: 0 }); return t.count += 1, (0, y.D)(e, (function (e, n) { t[e] = A(n, t[e]) })), t }(r, o.metrics), o } merge(e, t, n, r, i) { var o = this.getBucket(e, t, r, i); if (o.metrics) { var a = o.metrics; a.count += n.count, (0, y.D)(n, (function (e, t) { if ("count" !== e) { var r = a[e], i = n[e]; i && !i.c ? a[e] = A(i.t, r) : a[e] = function (e, t) { if (!t) return e; t.c || (t = x(t.t)); return t.min = Math.min(e.min, t.min), t.max = Math.max(e.max, t.max), t.t += e.t, t.sos += e.sos, t.c += e.c, t }(i, a[e]) } })) } else o.metrics = n } storeMetric(e, t, n, r) { var i = this.getBucket(e, t, n); return i.stats = A(r, i.stats), i } getBucket(e, t, n, r) { this.aggregatedData[e] || (this.aggregatedData[e] = {}); var i = this.aggregatedData[e][t]; return i || (i = this.aggregatedData[e][t] = { params: n || {} }, r && (i.custom = r)), i } get(e, t) { return t ? this.aggregatedData[e] && this.aggregatedData[e][t] : this.aggregatedData[e] } take(e) { for (var t = {}, n = "", r = !1, i = 0; i < e.length; i++)t[n = e[i]] = D(this.aggregatedData[n]), t[n].length && (r = !0), delete this.aggregatedData[n]; return r ? t : null } } function A(e, t) { return null == e ? function (e) { e ? e.c++ : e = { c: 1 }; return e }(t) : t ? (t.c || (t = x(t.t)), t.c += 1, t.t += e, t.sos += e * e, e > t.max && (t.max = e), e < t.min && (t.min = e), t) : { t: e } } function x(e) { return { t: e, min: e, max: e, sos: e * e, c: 1 } } function D(e) { return "object" != typeof e ? [] : (0, y.D)(e, _) } function _(e, t) { return t } var j = i(6797), E = i(5526), k = i(2438); var T = i(6998), N = i(8544), P = i(6382); class S extends p { static featureName = P.t; constructor(e, n) { let r = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; super(e, n, P.t, r), f.il && ((0, t.OP)(e).initHidden = Boolean("hidden" === document.visibilityState), (0, T.N)((() => (0, s.p)("docHidden", [(0, v.z)()], void 0, P.t, this.ee)), !0), (0, N.bP)("pagehide", (() => (0, s.p)("winPagehide", [(0, v.z)()], void 0, P.t, this.ee))), this.importAggregator()) } } var I = i(6034); class O extends p { static featureName = I.t9; constructor(e, t) { let n = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; super(e, t, I.t9, n), this.importAggregator() } } new class { constructor(e) { let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : (0, E.ky)(16); this.agentIdentifier = t, this.sharedAggregator = new w({ agentIdentifier: this.agentIdentifier }), this.features = {}, this.desiredFeatures = new Set(e.features || []), this.desiredFeatures.add(m), Object.assign(this, (0, a.j)(this.agentIdentifier, e, e.loaderType || "agent")), this.start() } get config() { return { info: (0, t.C5)(this.agentIdentifier), init: (0, t.P_)(this.agentIdentifier), loader_config: (0, t.DL)(this.agentIdentifier), runtime: (0, t.OP)(this.agentIdentifier) } } start() { const t = "features"; try { const n = r(this.agentIdentifier), i = [...this.desiredFeatures]; i.sort(((t, n) => e.p[t.featureName] - e.p[n.featureName])), i.forEach((t => { if (n[t.featureName] || t.featureName === e.D.pageViewEvent) { const r = function (t) { switch (t) { case e.D.ajax: return [e.D.jserrors]; case e.D.sessionTrace: return [e.D.ajax, e.D.pageViewEvent]; case e.D.pageViewTiming: return [e.D.pageViewEvent]; default: return [] } }(t.featureName); r.every((e => n[e])) || (0, g.Z)("".concat(t.featureName, " is enabled but one or more dependent features has been disabled (").concat((0, k.P)(r), "). This may cause unintended consequences or missing data...")), this.features[t.featureName] = new t(this.agentIdentifier, this.sharedAggregator) } })), (0, j.Qy)(this.agentIdentifier, this.features, t) } catch (e) { (0, g.Z)("Failed to initialize all enabled instrument classes (agent aborted) -", e); for (const e in this.features) this.features[e].abortHandler?.(); const n = (0, j.fP)(); return delete n.initializedAgents[this.agentIdentifier]?.api, delete n.initializedAgents[this.agentIdentifier]?.[t], delete this.sharedAggregator, n.ee?.abort(), delete n.ee?.get(this.agentIdentifier), !1 } } }({ features: [m, S, O], loaderType: "lite" }) })(), window.NRBA = o })();</script>
+  <meta name="language" content="english">
+  <meta name="author" content="CommonFloor.com">
+  <meta name="verify-v1" content="VdeJNnS7hN4uOPvKtrk68W7kpAX2onKQh4IB6AxZExk=">
+  <meta name="alexaVerifyID" content="j8ycakrVppm3U8Lrjh20f0l9MME">
+  <link rel="shortcut icon" href="https://teja8.kuikr.com/cfassets/images/favicon.ico">
+  <title>Property in India | Real Estate India | Buy/Sale/Rent Properties Online in India | Commonfloor.com</title>
+  <link href="https://www.commonfloor.com" rel="canonical">
+  <meta name="description"
+    content="2023-07-05 Buy, Sell, Rent residential properties online in India with India's leading online real estate platform. Find all your residential needs from the list of real estate projects, apartments, flats, houses etc on commonfloor.com">
+  <meta name="google-site-verification" content="Bo7dOOdDreHRGXMJfoDeouyz-ewvxsRO3wtSdEMRl9U">
+  <meta name="google-site-verification" content="hPpnn7E4IJthsDYEw5soC--GrOTqWpZAoUICkxY4G2g">
+  <!-- Bootstrap -->
+  <link rel="preconnect" href="//teja8.kuikr.com/">
+  <link rel="preconnect" href="//teja9.kuikr.com/">
+  <link rel="preconnect" href="//teja10.kuikr.com/">
+  <link rel="preconnect" href="//teja12.kuikr.com/">
+  <link rel="preconnect" href="//teja13.kuikr.com/">
+  <link rel="preconnect" href="//teja14.kuikr.com/">
+  <link rel="preconnect" href="//www.googletagservices.com">
+  <link rel="preconnect" href="//www.google-analytics.com">
+  <link rel="preconnect" href="//apis.google.com">
+  <link href="https://teja8.kuikr.com/cfassets/js/cf-common-full.09a85467a3f15ae712d.css" rel="stylesheet">
+  <link href="https://teja8.kuikr.com/cfassets/js/cf-home.c8ac635dfe0c72ac934.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-8mF4HfNEI6AAyHxC5C9l3O6+8rp/NTyMIp2vjWamh+pRM7fzj+BStP6FIRd+wtHZ" crossorigin="anonymous">
+
+  <script>
+    window.stateFromServer = {};
+    window.stateFromServer.pageType = 'HomePage';
+    window.stateFromServer.city = 'Bangalore';
+    window.stateFromServer.cityGroup = null;
+    window.stateFromServer.pageasset = '';
+    window.stateFromServer.query = '{"cityName":"Bangalore","cityGroup":null,"city_id":70,"enableProcess":1,"f_params":null,"qaAnalyticsCf":{"event":"home","email":null,"mobile":null,"city_id":70,"city_name":"Bangalore"}}';
+    window.stateFromServer.enableProcess = '1';
+    window.stateFromServer.searchIntent = '';
+    window.stateFromServer.my_check_cache = 'memcached';
+    window.stateFromServer.version = '1553252411053';
+    window.stateFromServer.map_required = '';
+    window.stateFromServer.qdfp_required = '1';
+    window.stateFromServer.localityName = '';
+    window.stateFromServer.intent = 'sale';
+    window.interstitialDisplay = false;
+    window.stateFromServer.abTestConfig = { "abTests": [{ "key": "change-pap-url" }] };
+  </script>
+  <!-- fid script -->
+  <script>
+    !function (n, e) { var t, o, i, c = [], f = { passive: !0, capture: !0 }, r = new Date, a = "pointerup", u = "pointercancel"; function p(n, c) { t || (t = c, o = n, i = new Date, w(e), s()) } function s() { o >= 0 && o < i - r && (c.forEach(function (n) { n(o, t) }), c = []) } function l(t) { if (t.cancelable) { var o = (t.timeStamp > 1e12 ? new Date : performance.now()) - t.timeStamp; "pointerdown" == t.type ? function (t, o) { function i() { p(t, o), r() } function c() { r() } function r() { e(a, i, f), e(u, c, f) } n(a, i, f), n(u, c, f) }(o, t) : p(o, t) } } function w(n) { ["click", "mousedown", "keydown", "touchstart", "pointerdown"].forEach(function (e) { n(e, l, f) }) } w(n), self.perfMetrics = self.perfMetrics || {}, self.perfMetrics.onFirstInputDelay = function (n) { c.push(n), s() } }(addEventListener, removeEventListener);
+    perfMetrics.onFirstInputDelay(function (delay, evt) { window.qperf = window.qperf || []; window.qperf.push({ FID: delay, event: evt }); });
+  </script>
+
+  <script>
+    var qdfpParams = {};
+
+    if (window.stateFromServer.pageType === "ListingOverviewPage") {
+      qdfpParams["dfp_id"] = "CF_FLP";
+      qdfpParams["dfp_subId"] = "flp";
+
+    }
+    else if (window.stateFromServer.pageType === "ProjectOverviewPage") {
+      qdfpParams["dfp_id"] = "CF_POVP";
+      qdfpParams["dfp_subId"] = "flp";
+    }
+    else if (window.stateFromServer.pageType === "HomePage") {
+      qdfpParams["dfp_id"] = "CF_HOME";
+      qdfpParams["dfp_subId"] = "home";
+    }
+
+    window.qdfp_vp = {
+      id: qdfpParams.dfp_id,
+      ptargeting: [{
+        key: 'City',
+        value: window.stateFromServer.city
+      }, {
+        key: 'Category',
+        value: 'Real Estate'
+      }, {
+        key: 'SubCat',
+        value: qdfpParams.dfp_subId
+      }, {
+        key: 'Locality',
+        value: window.stateFromServer.localityName
+      }]
+    };
+
+    (window.stateFromServer.pageType == "ListingOverviewPage") ? window.qdfp_vp.ptargeting.push({ "key": "price", "value": '' }) : '';
+
+    var QDFP = window.QDFP || {};
+    QDFP.dynamicSlots = QDFP.dynamicSlots || [];
+  </script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2VLPXGQ9YW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2VLPXGQ9YW');
+  </script>
+  <script src="https://teja8.kuikr.com/cfassets/js/q-analytics-36d0c1ecefc12307587.js"></script>
+  <script type="text/javascript">
+    window['GoogleAnalyticsObject'] = window['GoogleAnalyticsObject'] || 'ga';
+    //(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/'+ "analytics.js",'ga');
+    try {
+      var ga = ga || [];
+      ga("create", "UA-2595309-4", { 'siteSpeedSampleRate': 100, 'cookieDomain': 'commonfloor.com' });
+      ga('send', 'pageview');
+    } catch (er) {
+      window.console && console.log(er);
+    }
+  </script>
+  <script
+    type="application/ld+json">{"@type":"WebSite","potentialAction":[{"query-input":"required name=search_term_string","@type":"SearchAction","target":"https://www.commonfloor.com/freetext-search?q={search_term_string}"}],"name":"Commonfloor","@context":"http://schema.org","url":"https://www.commonfloor.com","sameAs":["https://www.facebook.com/commonfloor.com","https://twitter.com/commonfloor","https://plus.google.com/+commonfloor","https://www.linkedin.com/company/commonfloor"]}</script>
+</head>
+
+<body>
+  <!-- header start here -->
+  <header class="snbheader header cf-sell-wrp " id="snbheaderId">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-5 col-sm-6 col-md-3 pdltnone pdrgnone">
+          <a href="javascript:void(0);" class="fas fa-minus-square cf-tracking-enabled"
+            data-tracking-id="hp-burger-click"></a>
+          <a href="" data-tracking-id="header-logo-click" class="logo_cf_snb cf-tracking-enabled">
+            <img src="https://teja8.kuikr.com/cfassets/images/cf_logo_new.png" width="220" class="hidden-xs"
+              alt="Commonfloor - India's Premium Real Estate Portal">
+            <img src="https://teja8.kuikr.com/cfassets/images/cf_logo.png " width="40" class="visible-xs"
+              alt="Commonfloor - India's Premium Real Estate Portal">
+          </a>
+          <a href="https://www.quikr.com" target="_blank" class="logo_Quikr_header"></a>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 snbsrch pdltnone pdrgnone " id="msiteSearchview">
+          <div class="srchbox">
+
+            <div class="snbcty" id="CitySelectDw">
+              <div class="snb-ch" id="snb_city_sl"
+                onclick="CfAppActions.getFilterCityValue(this);CfAppActions.showCitySelect(this, event);">
+                <span class="snb-cn" id="snb_cn_id">Bangalore</span>
+                <span class="fas fa-chevron-down carw"></span>
+              </div>
+              <!-- <span class="icon-location msnbcity" id="msnbcity_id" onclick="CfAppActions.showCitySelect(this, event)"></span> -->
+              <div class="snb-cty-dw buy-rent-filter-class" style="display:block">
+                <div class="snb-cty-lst">
+                  <div class="snb-cty-inpt">
+                    <input placeholder="Type your City" id="citySuggestInput"
+                      onkeyup="CfAppActions.showCityAjax(this.value);" value="">
+                  </div>
+                  <ul role="listbox" id="cityDropdownList">
+                    <li role="option">Bangalore</li>
+                    <li role="option">Mumbai</li>
+                    <li role="option">Delhi</li>
+                    <li role="option">Pune</li>
+                    <li role="option">Chennai</li>
+                    <li role="option">Hyderabad</li>
+                    <li role="option">Kolkata</li>
+                    <li role="option">Ahmedabad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="snbcat" id="snb_search_intent">
+              <div class="dropdown">
+                <button class="dropdown-toggle cf-tracking-enabled" type="button" id="facility" data-value=""
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-tracking-id="2029"
+                  data-delegation-parent-class="dropdown">Buy</button>
+                <ul class="dropdown-menu" aria-labelledby="facility">
+                  <li onclick="CfAppActions.setSearchIntent('sale', 'Buy')">Buy</li>
+                  <li onclick="CfAppActions.setSearchIntent('rent', 'Rent')">Rent</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="snbipsrch" id="SrchSelectDw" onclick="CfAppActions.setLocalityActiveEvent();">
+              <div class="snb-multiselect-wrapper">
+                <input type="text" id="SrchSelectDwnew" value="">
+                <div id="hdrsrchtpbtn" class="btn hdtopbtn"
+                  onclick="window.location='/listing-search?city=Bangalore&amp;search_intent=sale&amp;polygon=1&amp;page=1&amp;page_size=30'">
+                  <i class="icon-magnifier fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-7 col-sm-6 col-md-3 pdltnone">
+          <div class="cfrlogin">
+            <div class="dropdown">
+
+              <a class="postpropbtn cf-tracking-enabled" data-tracking-id="hp-post-property-click"
+                data-delegation-parent-class="cf-sell-wrp" href="postad/">POST <span>PROPERTY</span></a>
+
+            </div>
+            <div class="dropdown logintxt" id="login-details">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <svg width="72px" height="72px" class="usricon" viewBox="0 0 72 72" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="user_with_circle" sketch:type="MSArtboardGroup" fill="#fff">
+                      <g id="icon_Artboard-35-copy-4" sketch:type="MSLayerGroup"
+                        transform="translate(2.000000, 2.000000)">
+                        <g id="Layer_1" sketch:type="MSShapeGroup">
+                          <g id="Group">
+                            <path
+                              d="M34,13 C27.3,13 21.8,18.5 21.8,25.2 C21.8,31.9 27.3,37.4 34,37.4 C40.7,37.4 46.2,32 46.2,25.2 C46.2,18.5 40.8,13 34,13 L34,13 Z M34,34.4 C28.9,34.4 24.8,30.3 24.8,25.2 C24.8,20.1 28.9,16 34,16 C39.1,16 43.2,20.1 43.2,25.2 C43.2,30.3 39.1,34.4 34,34.4 L34,34.4 Z"
+                              id="Shape"></path>
+                            <path
+                              d="M34,0 C15.3,0 0,15.3 0,34 C0,52.7 15.3,68 34,68 C52.7,68 68,52.7 68,34 C68,15.3 52.7,0 34,0 L34,0 Z M14,57.6 L14,57.5 C14,56 14,52.8 15.4,49.8 C17.1,46.1 19,43.9 24.6,42.4 C27.4,44 30.7,44.8 34,44.8 C37.3,44.8 40.5,44 43.4,42.4 C47.9,43.7 51,46.2 52.7,49.8 C54.1,52.8 54.1,56 54.1,57.5 L54.1,57.6 C48.6,62.2 41.6,65 34,65 C26.4,65 19.4,62.2 14,57.6 L14,57.6 Z M56.9,54.9 C56.8,53.1 56.4,50.8 55.3,48.6 C53.2,44.1 49.2,40.9 43.5,39.4 C43.1,39.3 42.7,39.4 42.3,39.6 C39.8,41.1 36.9,41.9 33.9,41.9 C30.9,41.9 28,41.1 25.5,39.6 C25.2,39.4 24.8,39.3 24.4,39.4 C17.3,41.2 14.7,44.2 12.6,48.6 C11.6,50.9 11.2,53.1 11,54.9 C6.1,49.3 3,42 3,34 C3,16.9 16.9,3 34,3 C51.1,3 65,16.9 65,34 C65,42 61.9,49.3 56.9,54.9 L56.9,54.9 Z"
+                              id="Shape"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a onclick="CfAppActions.pushAnalytics('hp-login-click', 'log-in')" href="#">Log in to your
+                    account</a></li>
+                <li><a onclick="CfAppActions.pushAnalytics('hp-login-click', 'signup-ind')" href="#">Sign up as
+                    individual</a></li>
+                <li><a onclick="CfAppActions.pushAnalytics('hp-login-click', 'signup-bld-brk')" href="#">Sign up as
+                    builder/agent</a></li>
+              </ul>
+            </div>
+            <div class="dropdown hide" id="short-list-details">
+              <span id="short-list-header-count"></span>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-heart cfsl"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Login to add properties to your shortlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end here -->
+  <!-- Nav bar start here -->
+  <div class="navbar navbar-default cf-header hidden-xs hidden-sm" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle hide" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fas fa-bars hide"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse hidden-xs">
+        <ul class="nav navbar-nav">
+          <li>
+            <a rel="nofollow" href="javascript:void(0)">Projects <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'projects')"
+                  href="bangalore-property/projects/status-upcoming/"> Upcoming Projects </a>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'projects')"
+                  href="bangalore-property/projects/status-ongoing/"> Ongoing Projects </a>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'projects')"
+                  href="bangalore-property/projects/status-completed/"> Completed Projects </a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li>
+            <a target="_blank" href="bangalore-luxury-property/for-sale/">Luxury Properties <span
+                class="newtag">New</span></a>
+          </li>
+
+          <li class="hllist">
+            <a target="_blank" onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'homeloan')"
+              href="homeloans/f%3Dhome-loan-header-nav%26utm_source%3Dcf-header-nav%26utm_medium%3Dhome-loan-header-nav%26utm_campaign%3Dcf-nav.html">Home
+              Loans</a>
+          </li>
+
+
+          <li>
+            <a rel="nofollow" href="javascript:void(0)">Awards <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu wd282">
+              <li class="dropdown-submenu">
+                <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'excellenceawards')" target="_blank"
+                  href="excellence-awards-bangalore-2020/">Realty Awards 2020 - Bangalore</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'excellenceawards')" target="_blank"
+                  href="excellence-awards-hyderabad-2020/">Realty Awards 2020 - Hyderabad &amp; Tamil Nadu</a>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'excellenceawards')" target="_blank"
+                  href="excellence-awards-bangalore-2019/">Real Estate Excellence Awards 2019 - Bangalore</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'excellenceawards')" target="_blank"
+                  href="excellence-awards-hyderabad-2019/">Real Estate Excellence Awards 2019 - Hyderabad</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'blog')" rel="nofollow" target="_blank"
+              href="guide/">Blog</a>
+          </li>
+
+          <li>
+            <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'forum')" rel="nofollow" target="_blank"
+              href="forum/">CF Forum</a>
+          </li>
+
+          <li>
+            <a onclick="CfAppActions.pushAnalytics('hp-header-menu-click', 'groups')" rel="nofollow" target="_blank"
+              href="https://groups.commonfloor.com/">CF Groups</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Nav bar end here -->
+  <!-- container start Here -->
+  <div class="cf-bgwhite">
+    <div class="container">
+      <div id="browse-links">
+        <div class="browse_links clearfix">
+          <div class="brolin items-5">
+            <div class="linkbox expand ">
+              <img src="https://teja8.kuikr.com/cfassets/images/buy-apartments.jpg?v=1" alt="Buy - Apartments">
+              <ul>
+                <li>
+                  <h2><a href="bangalore-property/projects/" class="l_title" target="_blank">Buy - Apartments</a></h2>
+                  <span id="subLink" class="hlsubhead">
+                    <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-sale/apartment-ht/budget-below-60-lakhs/" target="_blank">Below 60
+                      lakhs</a> <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-sale/apartment-ht/budget-between-60-lakhs-to-80-lakhs/"
+                      target="_blank" 60 lakhs - 80 lakhs</a> <a class="cf-tracking-enabled"
+                        data-tracking-id="hp-header-browse-link-click"
+                        href="bangalore-property/for-sale/apartment-ht/budget-between-80-lakhs-to-1-crore/"
+                        target="_blank">80 lakhs - 1 crore</a> </span>
+                  <i class="visible-xs visible-sm fas fa-chevron-down hlangle"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="linkbox  ">
+              <img src="https://teja8.kuikr.com/cfassets/images/buy-villas.jpg?v=1" alt="Buy - Villas">
+              <ul>
+                <li>
+                  <h2><a href="bangalore-property/projects/villa-ht/" class="l_title" target="_blank">Buy - Villas</a>
+                  </h2>
+                  <span id="subLink" class="hlsubhead">
+                    <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-sale/villa-ht/budget-between-60-lakhs-to-80-lakhs/"
+                      target="_blank">60 lakhs - 80 lakhs</a> <a class="cf-tracking-enabled"
+                      data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-sale/villa-ht/budget-between-80-lakhs-to-1-crore/" target="_blank">80
+                      lakhs - 1 crore</a> <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-sale/villa-ht/budget-between-1-crore-to-5-crores/" target="_blank">1
+                      crore - 5 crore</a> </span>
+                  <i class="visible-xs visible-sm fas fa-chevron-down hlangle"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="linkbox  lxry">
+              <img src="https://teja8.kuikr.com/cfassets/images/buy-luxury.jpg?v=1" alt="Buy - Luxury Properties">
+              <ul>
+                <li>
+                  <h2><a href="bangalore-luxury-property/for-sale/" class="l_title" target="_blank">Buy - Luxury
+                      Properties</a></h2>
+                  <span id="subLink" class="hlsubhead">
+                    <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-luxury-property/for-sale/budget-between-1-crore-to-1.6-crore/" target="_blank">1
+                      crore - 1.6 crores</a> <a class="cf-tracking-enabled"
+                      data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-luxury-property/for-sale/budget-between-1.6-crore-to-5-crore/" target="_blank">1.6
+                      crores - 5 crores</a> <a class="cf-tracking-enabled"
+                      data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-luxury-property/for-sale/budget-above-5-crores/" target="_blank">Above 5
+                      crores</a> </span>
+                  <i class="visible-xs visible-sm fas fa-chevron-down hlangle"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="linkbox  ">
+              <img src="https://teja8.kuikr.com/cfassets/images/buy-plots.jpg?v=1" alt="Buy - Plots">
+              <ul>
+                <li>
+                  <h2><a href="bangalore-property/projects/plot-ht/freehold-ownership/" class="l_title"
+                      target="_blank">Buy - Plots</a></h2>
+                  <span id="subLink" class="hlsubhead">
+                    <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-sale/plot-ht/budget-below-60-lakhs/" target="_blank">Below 60
+                      lakhs</a> <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-sale/plot-ht/budget-between-60-lakhs-to-80-lakhs/" target="_blank">60
+                      lakhs - 80 lakhs</a> <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-sale/plot-ht/budget-between-80-lakhs-to-1-crore/"
+                      target="_blank">Above 80 lakhs</a> </span>
+                  <i class="visible-xs visible-sm fas fa-chevron-down hlangle"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="linkbox  ">
+              <img src="https://teja8.kuikr.com/cfassets/images/rent-apartments.jpg?v=1" alt="Rent - Apartments">
+              <ul>
+                <li>
+                  <h2><a href="bangalore-property/for-rent/apartment-ht/" class="l_title" target="_blank">Rent -
+                      Apartments</a></h2>
+                  <span id="subLink" class="hlsubhead">
+                    <a class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-rent/apartment-ht/1-bhk/" target="_blank">1 BHK</a> <a
+                      class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-rent/apartment-ht/2-bhk/" target="_blank">2 BHK</a> <a
+                      class="cf-tracking-enabled" data-tracking-id="hp-header-browse-link-click"
+                      href="bangalore-property/for-rent/apartment-ht/3-bhk/" target="_blank">3 BHK</a> </span>
+                  <i class="visible-xs visible-sm fas fa-chevron-down hlangle"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div id="resume_ad_id"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="home-location">
+        <div class="home-location clearfix">
+          <div class="locbox">
+            <h2>Whitefield</h2>
+            <p>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-sale')"
+                href="properties-for-sale-in-whitefield/cfri-4e71a1844749c/" target="_blank">4400+ for Sale</a>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-rent')"
+                href="properties-for-rent-in-whitefield/cfri-4e71a1844749c/" target="_blank">600+ for Rent</a>
+            </p>
+          </div>
+          <div class="locbox">
+            <h2>Sarjapur Road</h2>
+            <p>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-sale')"
+                href="properties-for-sale-in-sarjapur-road/cfri-561b9bcea67b8/" target="_blank">2700+ for Sale</a>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-rent')"
+                href="properties-for-rent-in-sarjapur-road/cfri-561b9bcea67b8/" target="_blank">480+ for Rent</a>
+            </p>
+          </div>
+          <div class="locbox">
+            <h2>Devanahalli</h2>
+            <p>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-sale')"
+                href="properties-for-sale-in-devanahalli/cfai-3xoznm/" target="_blank">2100+ for Sale</a>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-rent')"
+                href="properties-for-rent-in-devanahalli/cfai-3xoznm/" target="_blank">30+ for Rent</a>
+            </p>
+          </div>
+          <div class="locbox">
+            <h2>Kanakapura Road</h2>
+            <p>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-sale')"
+                href="properties-for-sale-in-kanakapura-road/cfri-5631b9f942f52/" target="_blank">1700+ for Sale</a>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-rent')"
+                href="properties-for-rent-in-kanakapura-road/cfri-5631b9f942f52/" target="_blank">190+ for Rent</a>
+            </p>
+          </div>
+          <div class="locbox">
+            <h2>Yelahanka</h2>
+            <p>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-sale')"
+                href="properties-for-sale-in-yelahanka/cfri-4f06fd7c57855/" target="_blank">1300+ for Sale</a>
+              <a onclick="CfAppActions.pushAnalytics('hp-header-browse-link-click', 'locality-rent')"
+                href="properties-for-rent-in-yelahanka/cfri-4f06fd7c57855/" target="_blank">110+ for Rent</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="dfp_banner_stream"></div>
+      <div class="clearfix"></div>
+      <div id="banner">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="hp hpbd" id="hp_top_banner">
+              <!-- <h1 class=" hide"><b>CommonFloor </b> - A Beautiful Way to Find your Home</h1> -->
+              <div id="myCarouselB" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <h1>CommonFloor.com</h1>
+                  <div class="item active" data-interval="10000">
+                    <div class="hpsldbox cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                      onclick="CfAppActions.redirectToPovpPage('/grc-shreekrish-bangalore/povp-8ikiz1?ad_id=549834');">
+                      <img alt="GRC Shreekrish" src="https://teja10.kuikr.com/restatic/1672052428.jpg">
+                      <div class="rerainfo"><span>RERA ID:</span> PRM/KA/RERA/1251/308/PR/020922/005199</div>
+                    </div>
+                    <div class="carousel-caption">
+                      <div class="offerbox">
+                        <div class="offertag grn">USP</div>
+                        <div class="offertext"></div>
+                      </div>
+                      <div class="cf-tracking-enabled cfTrackinE" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/grc-shreekrish-bangalore/povp-8ikiz1?ad_id=549834');">
+                        GRC Shreekrish </div>
+                      <p class="cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/grc-shreekrish-bangalore/povp-8ikiz1?ad_id=549834');">
+                        <span>by GRC Infra</span> <span>at Sarjapur Road</span>
+                      </p>
+                      <div class="ellipsis cf-tracking-enabled cfTrackinO" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/grc-shreekrish-bangalore/povp-8ikiz1?ad_id=549834');">
+                        @ 60.13 L onwards
+                      </div>
+                      <a class="cf-tracking-enabled btn iami" data-tracking-id="hp-wall-of-fame-click"
+                        href="javascript:void(0);"
+                        onclick="CfAppActions.redirectToPovpPage('/grc-shreekrish-bangalore/povp-8ikiz1?ad_id=549834');">Explore
+                        Now</a>
+                    </div>
+                  </div>
+                  <div class="item " data-interval="10000">
+                    <div class="hpsldbox cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                      onclick="CfAppActions.redirectToPovpPage('/renaissance-reserva-bangalore/povp-aqsi7q?ad_id=550270');">
+                      <img alt="Renaissance Reserva" class="cf-lazyload"
+                        data-src="https://teja10.kuikr.com/restatic/1688552036.jpg">
+                      <div class="rerainfo"><span>RERA ID:</span> PRM/KA/RERA/1251/309/PR/190614/002602</div>
+                    </div>
+                    <div class="carousel-caption">
+                      <div class="offerbox">
+                        <div class="offertag ylw">Offer!</div>
+                        <div class="offertext">2/3 BHK Apartments Near BEL Circle, Outer Ring Road Jalahalli, Bangalore
+                          North</div>
+                      </div>
+                      <div class="cf-tracking-enabled cfTrackinE" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/renaissance-reserva-bangalore/povp-aqsi7q?ad_id=550270');">
+                        Renaissance Reserva </div>
+                      <p class="cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/renaissance-reserva-bangalore/povp-aqsi7q?ad_id=550270');">
+                        <span>by Renaissance Holdings &amp; Developers (P) Ltd</span> <span>at Yeshwanthpur</span>
+                      </p>
+                      <div class="ellipsis cf-tracking-enabled cfTrackinO" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/renaissance-reserva-bangalore/povp-aqsi7q?ad_id=550270');">
+                        @ 1.07 Cr onwards
+                      </div>
+                      <a class="cf-tracking-enabled btn iami" data-tracking-id="hp-wall-of-fame-click"
+                        href="javascript:void(0);"
+                        onclick="CfAppActions.redirectToPovpPage('/renaissance-reserva-bangalore/povp-aqsi7q?ad_id=550270');">Explore
+                        Now</a>
+                    </div>
+                  </div>
+                  <div class="item " data-interval="10000">
+                    <div class="hpsldbox cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                      onclick="CfAppActions.redirectToPovpPage('/vrr-golden-enclave-phase-2-bangalore/povp-htvmrd?ad_id=550183');">
+                      <img alt="VRR Golden Enclave Phase 2" class="cf-lazyload"
+                        data-src="https://teja10.kuikr.com/restatic/1686117452.jpg">
+                      <div class="rerainfo"><span>RERA ID:</span> PRM/KA/RERA/1251/308/PR/180319/001808,
+                        PRM/KA/RERA/1251/308/PR/211222/005548</div>
+                    </div>
+                    <div class="carousel-caption">
+                      <div class="offerbox">
+                        <div class="offertag grn">USP</div>
+                        <div class="offertext">Welcome to ‘timeless luxury’ with a gated community!</div>
+                      </div>
+                      <div class="cf-tracking-enabled cfTrackinE" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/vrr-golden-enclave-phase-2-bangalore/povp-htvmrd?ad_id=550183');">
+                        VRR Golden Enclave Phase 2 </div>
+                      <p class="cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/vrr-golden-enclave-phase-2-bangalore/povp-htvmrd?ad_id=550183');">
+                        <span>by VRR &amp; Co.</span> <span>at Electronic City Phase I</span>
+                      </p>
+                      <div class="ellipsis cf-tracking-enabled cfTrackinO" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/vrr-golden-enclave-phase-2-bangalore/povp-htvmrd?ad_id=550183');">
+                        @ 2.92 Cr onwards
+                      </div>
+                      <a class="cf-tracking-enabled btn iami" data-tracking-id="hp-wall-of-fame-click"
+                        href="javascript:void(0);"
+                        onclick="CfAppActions.redirectToPovpPage('/vrr-golden-enclave-phase-2-bangalore/povp-htvmrd?ad_id=550183');">Explore
+                        Now</a>
+                    </div>
+                  </div>
+                  <div class="item " data-interval="10000">
+                    <div class="hpsldbox cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                      onclick="CfAppActions.redirectToPovpPage('/assetz-bloom-dell-bangalore/povp-hs7wdd?ad_id=550105');">
+                      <img alt="Assetz Bloom &amp; Dell" class="cf-lazyload"
+                        data-src="https://teja10.kuikr.com/restatic/1688362724.jpg">
+                      <div class="rerainfo"><span>RERA ID:</span> PRM/KA/RERA/1251/446/PR/201222/005545,
+                        PRM/KA/RERA/1251/446/PR/050523/005911</div>
+                    </div>
+                    <div class="carousel-caption">
+                      <div class="offerbox">
+                        <div class="offertag grn">USP</div>
+                        <div class="offertext">Planned thoughtfully with just 394 exclusive units neighbouring lush
+                          landscape</div>
+                      </div>
+                      <div class="cf-tracking-enabled cfTrackinE" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/assetz-bloom-dell-bangalore/povp-hs7wdd?ad_id=550105');">
+                        Assetz Bloom &amp; Dell </div>
+                      <p class="cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/assetz-bloom-dell-bangalore/povp-hs7wdd?ad_id=550105');">
+                        <span>by Assetz Property Group</span> <span>at Whitefield</span>
+                      </p>
+                      <div class="ellipsis cf-tracking-enabled cfTrackinO" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/assetz-bloom-dell-bangalore/povp-hs7wdd?ad_id=550105');">
+                        @ 1.61 Cr onwards
+                      </div>
+                      <a class="cf-tracking-enabled btn iami" data-tracking-id="hp-wall-of-fame-click"
+                        href="javascript:void(0);"
+                        onclick="CfAppActions.redirectToPovpPage('/assetz-bloom-dell-bangalore/povp-hs7wdd?ad_id=550105');">Explore
+                        Now</a>
+                    </div>
+                  </div>
+                  <div class="item " data-interval="10000">
+                    <div class="hpsldbox cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                      onclick="CfAppActions.redirectToPovpPage('/gopalan-florenza-bangalore/povp-25bwsc?ad_id=550259');">
+                      <img alt="Gopalan Florenza" class="cf-lazyload"
+                        data-src="https://teja10.kuikr.com/restatic/1688022635.jpg">
+                      <div class="rerainfo"><span>RERA ID:</span> PRM/KA/RERA/1251/310/PR/190726/002733</div>
+                    </div>
+                    <div class="carousel-caption">
+                      <div class="offerbox">
+                        <div class="offertag grn">USP</div>
+                        <div class="offertext">Luxurious residential complex that offers 480 units &amp; spread over 6.5
+                          acres</div>
+                      </div>
+                      <div class="cf-tracking-enabled cfTrackinE" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/gopalan-florenza-bangalore/povp-25bwsc?ad_id=550259');">
+                        Gopalan Florenza </div>
+                      <p class="cf-tracking-enabled" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/gopalan-florenza-bangalore/povp-25bwsc?ad_id=550259');">
+                        <span>by Gopalan Enterprises</span> <span>at Banashankari</span>
+                      </p>
+                      <div class="ellipsis cf-tracking-enabled cfTrackinO" data-tracking-id="hp-wall-of-fame-click"
+                        onclick="CfAppActions.redirectToPovpPage('/gopalan-florenza-bangalore/povp-25bwsc?ad_id=550259');">
+                        @ 1.02 Cr onwards
+                      </div>
+                      <a class="cf-tracking-enabled btn iami" data-tracking-id="hp-wall-of-fame-click"
+                        href="javascript:void(0);"
+                        onclick="CfAppActions.redirectToPovpPage('/gopalan-florenza-bangalore/povp-25bwsc?ad_id=550259');">Explore
+                        Now</a>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+                </div>
+                <!-- End Carousel Inner -->
+
+                <a data-slide="prev" href="#myCarouselB" class="left carousel-control icon-navigate_before"></a>
+                <a data-slide="next" href="#myCarouselB" class="right carousel-control icon-navigate_next"></a>
+
+                <ul class="nav-justified navb">
+                  <li data-target="#myCarouselB" data-slide-to="0" class="active"><a href="#"></a></li>
+                  <li data-target="#myCarouselB" data-slide-to="1" class=""><a href="#"></a></li>
+                  <li data-target="#myCarouselB" data-slide-to="2" class=""><a href="#"></a></li>
+                  <li data-target="#myCarouselB" data-slide-to="3" class=""><a href="#"></a></li>
+                  <li data-target="#myCarouselB" data-slide-to="4" class=""><a href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="sponsored-projects"></div>
+      <div class="clearfix"></div>
+      <div id="collection">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="hmein">Collections for you</h2>
+            <div class="msiteslide">
+              <div class="mres">
+                <a onclick="CfAppActions.pushAnalytics('hp-collections-click', 'Budget Homes')"
+                  href="collections-Bangalore/budget-Homes/cf-1/" class="cfcfy" target="_blank">
+                  <i class="fas fa-wave-square budget_homes lazy"></i>
+                  <span>Budget Homes</span>
+                  <small></small>
+                </a>
+                <a onclick="CfAppActions.pushAnalytics('hp-collections-click', 'Luxury Homes')"
+                  href="collections-Bangalore/luxury-Homes/cf-2/" class="cfcfy" target="_blank">
+                  <i class="fas fa-wave-square luxury_homes lazy"></i>
+                  <span>Luxury Homes</span>
+                  <small></small>
+                </a>
+                <a onclick="CfAppActions.pushAnalytics('hp-collections-click', 'Kids Friendly Homes')"
+                  href="collections-Bangalore/kids-Friendly-Homes/cf-3/" class="cfcfy" target="_blank">
+                  <i class="fas fa-wave-square kids_friendly_homes lazy"></i>
+                  <span>Kids Friendly Homes</span>
+                  <small></small>
+                </a>
+                <a onclick="CfAppActions.pushAnalytics('hp-collections-click', 'Home Office Homes')"
+                  href="collections-Bangalore/home-Office-Homes/cf-4/" class="cfcfy" target="_blank">
+                  <i class="fas fa-wave-square home_office_homes lazy"></i>
+                  <span>Home Office Homes</span>
+                  <small></small>
+                </a>
+                <a onclick="CfAppActions.pushAnalytics('hp-collections-click', 'Stylish Homes')"
+                  href="collections-Bangalore/stylish-Homes/cf-5/" class="cfcfy" target="_blank">
+                  <i class="fas fa-wave-square stylish_homes lazy"></i>
+                  <span>Stylish Homes</span>
+                  <small></small>
+                </a>
+                <a onclick="CfAppActions.pushAnalytics('hp-collections-click', 'Nature Homes')"
+                  href="collections-Bangalore/nature-Homes/cf-6/" class="cfcfy" target="_blank">
+                  <i class="fas fa-wave-square nature_homes lazy"></i>
+                  <span>Nature Homes</span>
+                  <small></small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="container-fluid">
+      <div id="top-developers">
+        <div class="row mrtp75 mrbt10">
+          <div class="col-xs-12">
+            <div class="fdbg"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 mpdnone">
+                  <h3 class="tfd"><img alt="Top Developers" class="cf-lazyload"
+                      data-src="https://teja8.kuikr.com/cfassets/images/featured_developers.png"></h3>
+                  <div class="fdevwrapper carousel slide hpmoveslider" id="hpsldcfy" data-ride="carousel">
+                    <div class="fdsliderwrapper">
+                      <ul class="fdnav navb">
+                        <li key="0" data-target="#hpsldcfy" data-slide-to="0" class="active">
+                          <h3><span><img class="cf-lazyload"
+                                data-src="https://teja10.kuikr.com/r1/20161213/ak_513_1289846447-1481607592_80x80.jpeg"></span>
+                            <p>Puravankara Limited</p>
+                          </h3>
+                        </li>
+                        <li key="1" data-target="#hpsldcfy" data-slide-to="1" class="">
+                          <h3><span><img class="cf-lazyload"
+                                data-src="https://teja10.kuikr.com/r1/20181130/ak_88_1932163601-1543554216_80x80.jpeg"></span>
+                            <p>Gopalan Enterprises</p>
+                          </h3>
+                        </li>
+                        <li key="2" data-target="#hpsldcfy" data-slide-to="2" class="">
+                          <h3><span><img class="cf-lazyload"
+                                data-src="https://teja10.kuikr.com/r1/20151122/ak_170_559657194-1448212301_80x80.png"></span>
+                            <p>Sowparnika Projects &amp; Infrastructure Pvt Ltd</p>
+                          </h3>
+                        </li>
+                        <li key="3" data-target="#hpsldcfy" data-slide-to="3" class="">
+                          <h3><span><img class="cf-lazyload"
+                                data-src="https://teja10.kuikr.com/r1/20220419/ak_100_1232240206-1650364349_80x80.jpeg"></span>
+                            <p>Sattva</p>
+                          </h3>
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="fdevslider">
+                      <div class="carousel-inner">
+
+                        <div key="0" class="item  active">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="fdsubtitle mfix"><span class="fdbdlogo visible-xs visible-sm"><img
+                                    class="cf-lazyload"
+                                    data-src="https://teja10.kuikr.com/r1/20161213/ak_513_1289846447-1481607592_80x80.jpeg"></span>About
+                                Puravankara Limited</div>
+                              <div class="fddlsbox">
+                                <a href="javascript:void(0);" class="cf-tracking-enabled"
+                                  data-tracking-id="hp-top-developers-click"
+                                  onclick="CfAppActions.redirectToPovpPage('/puravankara-limited/builder/mbo6b4');">
+                                  <img class="cf-lazyload ftdimg"
+                                    data-src="https://teja10.kuikr.com/restatic/1686819543.jpg"
+                                    alt="Puravankara Limited">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="fdsubtitle pdrg15">Projects by Puravankara Limited</p>
+                          <div class="row pdrg15">
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf5def21b0a5c70.gif"
+                                    alt="Purva Atmosphere">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="purva-atmosphere-bangalore/povp-ru5imj/ad_id%3D550206.html"
+                                    target="_blank"> Purva Atmosphere</a></h4>
+                                <span>Thanisandra, Bangalore</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf639c358835be2.gif"
+                                    alt="Purva Meraki">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="purva-meraki-bangalore/povp-i82nj0/ad_id%3D550206.html" target="_blank">
+                                    Purva Meraki</a></h4>
+                                <span>HSR Layout, Bangalore</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf62f4afa609259.gif"
+                                    alt="Purva Zenium">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="purva-zenium-bangalore/povp-faz328/ad_id%3D550206.html" target="_blank">
+                                    Purva Zenium</a></h4>
+                                <span>International Airport Road, Bangalore</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div key="1" class="item  ">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="fdsubtitle mfix"><span class="fdbdlogo visible-xs visible-sm"><img
+                                    class="cf-lazyload"
+                                    data-src="https://teja10.kuikr.com/r1/20181130/ak_88_1932163601-1543554216_80x80.jpeg"></span>About
+                                Gopalan Enterprises</div>
+                              <div class="fddlsbox">
+                                <a href="javascript:void(0);" class="cf-tracking-enabled"
+                                  data-tracking-id="hp-top-developers-click"
+                                  onclick="CfAppActions.redirectToPovpPage('/gopalan-enterprises/builder/f56exe');">
+                                  <img class="cf-lazyload ftdimg"
+                                    data-src="https://teja10.kuikr.com/restatic/1680929216.jpg"
+                                    alt="Gopalan Enterprises">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="fdsubtitle pdrg15">Projects by Gopalan Enterprises</p>
+                          <div class="row pdrg15">
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf5d086997e59b5.gif"
+                                    alt="Gopalan Olympia">
+                                  <div class="statustag">completed</div>
+                                </div>
+                                <h4><a href="gopalan-olympia-bangalore/povp-e8m12f/ad_id%3D550076.html" target="_blank">
+                                    Gopalan Olympia</a></h4>
+                                <span>Mysore Road, Bangalore</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf649a87c9af382.gif"
+                                    alt="Gopalan Florenza">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="gopalan-florenza-bangalore/povp-25bwsc/ad_id%3D550076.html"
+                                    target="_blank"> Gopalan Florenza</a></h4>
+                                <span>Banashankari, Bangalore</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf5e33beb670efd.gif"
+                                    alt="Gopalan Aqua">
+                                  <div class="statustag">completed</div>
+                                </div>
+                                <h4><a href="gopalan-aqua-bangalore/povp-ylznh3/ad_id%3D550076.html" target="_blank">
+                                    Gopalan Aqua</a></h4>
+                                <span>Whitefield, Bangalore</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div key="2" class="item  ">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="fdsubtitle mfix"><span class="fdbdlogo visible-xs visible-sm"><img
+                                    class="cf-lazyload"
+                                    data-src="https://teja10.kuikr.com/r1/20151122/ak_170_559657194-1448212301_80x80.png"></span>About
+                                Sowparnika Projects &amp; Infrastructure Pvt Ltd</div>
+                              <div class="fddlsbox">
+                                <a href="javascript:void(0);" class="cf-tracking-enabled"
+                                  data-tracking-id="hp-top-developers-click"
+                                  onclick="CfAppActions.redirectToPovpPage('/sowparnika-projects-infrastructure-pvt-ltd/builder/84ranx');">
+                                  <img class="cf-lazyload ftdimg"
+                                    data-src="https://teja10.kuikr.com/restatic/1686819106.png"
+                                    alt="Sowparnika Projects &amp; Infrastructure Pvt Ltd">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="fdsubtitle pdrg15">Projects by Sowparnika Projects &amp; Infrastructure Pvt Ltd</p>
+                          <div class="row pdrg15">
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf646b2b18a04c7.gif"
+                                    alt="Sowparnika Life On The Green">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="sowparnika-life-on-the-green-bangalore/povp-bea2tv/ad_id%3D550205.html"
+                                    target="_blank"> Sowparnika Life On The Green</a></h4>
+                                <span>Sarjapur Attibele Road, Bangalore</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf5dee44dd2d41b.gif"
+                                    alt="Sowparnika Pragati">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="sowparnika-pragati-bangalore/povp-s92h00/ad_id%3D550205.html"
+                                    target="_blank"> Sowparnika Pragati</a></h4>
+                                <span>Off Sarjapur road, Bangalore</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf63f33d16845dd.gif"
+                                    alt="Sowparnika Sunray">
+                                  <div class="statustag">completed</div>
+                                </div>
+                                <h4><a href="sowparnika-sunray-bangalore/povp-cdmior/ad_id%3D550205.html"
+                                    target="_blank"> Sowparnika Sunray</a></h4>
+                                <span>Mysore Road, Bangalore</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div key="3" class="item  ">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="fdsubtitle mfix"><span class="fdbdlogo visible-xs visible-sm"><img
+                                    class="cf-lazyload"
+                                    data-src="https://teja10.kuikr.com/r1/20220419/ak_100_1232240206-1650364349_80x80.jpeg"></span>About
+                                Sattva</div>
+                              <div class="fddlsbox">
+                                <a href="javascript:void(0);" class="cf-tracking-enabled"
+                                  data-tracking-id="hp-top-developers-click"
+                                  onclick="CfAppActions.redirectToPovpPage('/sattva/builder/lr363n');">
+                                  <img class="cf-lazyload ftdimg"
+                                    data-src="https://teja10.kuikr.com/restatic/1680929757.jpg" alt="Sattva">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="fdsubtitle pdrg15">Projects by Sattva</p>
+                          <div class="row pdrg15">
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf6311de82b7989.gif"
+                                    alt="Sattva Aqua Vista">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="sattva-aqua-vista-bangalore/povp-dpdo4y/ad_id%3D550077.html"
+                                    target="_blank"> Sattva Aqua Vista</a></h4>
+                                <span>Bannerghatta Road, Bangalore</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf62611bdae5c51.gif"
+                                    alt="Sattva Exotic">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="sattva-exotic-bangalore/povp-bajrvw/ad_id%3D550077.html" target="_blank">
+                                    Sattva Exotic</a></h4>
+                                <span>Bagalur Main Road, Bangalore</span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                              <div class="fdstile">
+                                <div class="fdimgwrp">
+                                  <img class="cf-lazyload"
+                                    data-src="https://teja12.kuikr.com/is/a/c/655x525/gallery_images/original/cf627b86687c309.gif"
+                                    alt="Sattva Aeropolis">
+                                  <div class="statustag">ongoing</div>
+                                </div>
+                                <h4><a href="sattva-aeropolis-bangalore/povp-qhboqp/ad_id%3D550077.html"
+                                    target="_blank"> Sattva Aeropolis</a></h4>
+                                <span>Devanahalli, Bangalore</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <a data-slide="prev" href="#hpsldcfy" class="left carousel-control icon-navigate_before "></a>
+                      <a data-slide="next" href="#hpsldcfy" class="right carousel-control icon-navigate_next "></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="container">
+      <div id="home_mon" class="mrtp45" style="text-align:center"></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="container-fluid">
+      <div id="cfstudio">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="container">
+      <div id="downloadMobileApp">
+        <div class="row mrtp75">
+          <div class="col-xs-12">
+            <div class="cf-app">
+              <div class="cf-app-box clearfix">
+                <div class="cf-app-mimg">
+                  <img alt="Commonfloor App" class="cf-lazyload"
+                    data-src="https://teja8.kuikr.com/cfassets/images/download_app.png">
+                </div>
+                <div class="roundbox"></div>
+                <a href="mobile/src%3Dother_commonfloor%26medium%3Dpcweb%26campaign%3DPC-HP-Tile%26content%3D%26term%3D.html"
+                  class="cf-orng-bg" target="_blank">
+                  <div class="dwnAps">Switch To The Fast Lane</div>
+                  <div class="dwnApsB">Find homes and get detailed insight anytime, anywhere</div>
+                </a>
+
+                <div class="cf-app-btn clearfix">
+                  <ul>
+                    <li>
+                      <a onclick="CfAppActions.pushAnalytics('hp-app-download-click', 'android')"
+                        class="cf-tracking-enabled" data-tracking-id="hp-footer-anroid"
+                        data-delegation-parent-class="apps" title="Android Property Search App"
+                        href="http://a.localytics.com/android?id=com.commonfloor&amp;referrer=utm_source=other_commonfloor&amp;utm_medium=pcweb&amp;utm_content=home&amp;utm_term=&amp;utm_campaign=HP-box"
+                        target="_blank" rel="nofollow">
+                        <div class="cf-appbtn play">
+                          <svg width="28px" height="28px" viewBox="0 0 20 22" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd"
+                              sketch:type="MSPage">
+                              <path
+                                d="M0.644744964,21.9650748 C0.254202901,21.8598787 0,21.4721398 0,20.8721315 L0,1.06673994 C0,0.511040818 0.215237322,0.13626225 0.556430066,3.90798505e-14 L0.556430066,3.90798505e-14 L10.2892072,11.0372633 L0.644744964,21.9650748 L0.644744964,21.9650748 Z M1.98453168,21.5446698 L13.6997237,14.9048922 L10.8463222,11.6690486 L1.98453168,21.5446698 L1.98453168,21.5446698 Z M13.7803956,7.08151669 L2.22846736,0.532749802 L10.8632139,10.3868759 L13.7803956,7.08151669 L13.7803956,7.08151669 Z M14.5641845,7.52584521 L19.0895939,10.0912915 C19.946426,10.577028 19.9542618,11.36003 19.0895939,11.8500947 L14.4496961,14.479833 L11.4233025,11.026059 L14.5641845,7.52584521 L14.5641845,7.52584521 Z"
+                                id="google-play-copy" fill="#ffffff" sketch:type="MSShapeGroup"></path>
+                            </g>
+                          </svg>
+                          <small>Android App on</small><span>Google Play</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="properties-seller-count">
+        <div class="row mrtp75">
+          <div class="col-xs-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 text-center">
+                  <div class="cfdatainfo cfpc lazy">&nbsp;</div>
+                  <div class="cfdatanumber">3,17,077+</div>
+                  <div class="cfdatadls">Properties &amp; Counting...</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 text-center">
+                  <div class="cfdatainfo cfpl lazy">&nbsp;</div>
+                  <div class="cfdatanumber">3,723</div>
+                  <div class="cfdatadls">Properties Listed</div>
+                  <span class="slnote">In the last 24 Hours</span>
+                </div>
+                <div class="col-xs-12 col-sm-4 text-center">
+                  <div class="cfdatainfo cfsc lazy">&nbsp;</div>
+                  <div class="cfdatanumber">5,474</div>
+                  <div class="cfdatadls">Sellers Contacted</div>
+                  <span class="slnote">In the last 24 Hours</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="recently-added-properties">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="hmein">Recently Added Properties</h2>
+            <div class="carousel slide hpmoveslider" id="hpsldrap">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="peninsula-pine-woods-phase-ii-bangalore/povp-cbp5zj/"
+                          target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Peninsula Pine Woods Phase II in Sarjapur" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/563a42086d461.jpg">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Peninsula Pine Woods Phase II</h3>
+                            <div class="subtext"> PLOT</div>
+                            <div class="subtext">Sarjapur</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 36.35 L - 36.35 L
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Peninsula Infra Development Pvt. Ltd.</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'cbp5zj','Peninsula Infra Development Pvt. Ltd.','ce1fqo'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="gomati-iris-bangalore/povp-gfwvcp/" target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Gomati Iris in Bommasandra" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/cf5ef0309a1bed4.gif">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Gomati Iris</h3>
+                            <div class="subtext">2BHK,2.5BHK,3BHK APARTMENT</div>
+                            <div class="subtext">Bommasandra</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 45.98 L - 53.02 L
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Gomati Infratech</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'gfwvcp','Gomati Infratech','co3bv0'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="celebrity-prime-eco-front-bangalore/povp-rx9z6j/" target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Celebrity Prime Eco Front in Bannerghatta Jigani Road" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/public/images/apartments/original_img/rx9z6j.gif">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Celebrity Prime Eco Front</h3>
+                            <div class="subtext"> PLOT</div>
+                            <div class="subtext">Bannerghatta Jigani Road</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 25.20 L - 50.40 L
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Celebrity Prime Developers</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'rx9z6j','Celebrity Prime Developers','8zp4wb'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="candeur-carlisle-bangalore/povp-80sp3g/" target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Candeur Carlisle in Mahadevpura" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/public/images/apartments/original_img/80sp3g.gif">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Candeur Carlisle</h3>
+                            <div class="subtext">2BHK,3BHK APARTMENT</div>
+                            <div class="subtext">Mahadevpura</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 96.47 L - 1.30 Cr
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Candeur Developers &amp; Builders</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'80sp3g','Candeur Developers &amp; Builders','g3qlu1'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item ">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="gm-infinite-elegance-tower-2-bangalore/povp-wxm4w4/"
+                          target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="GM Infinite Elegance Tower 2 in Margondanahalli" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/cf64a56214202fb.gif">
+                            <span class="ongoing">ongoing</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>GM Infinite Elegance Tower 2</h3>
+                            <div class="subtext">1BHK,2BHK,3BHK,STUDIOBHK APARTMENT</div>
+                            <div class="subtext">Margondanahalli</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 23 L - 64.51 L
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>GM Infinite Dwelling (India) Pvt. Ltd. Bangalore
+                          </div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'wxm4w4','GM Infinite Dwelling (India) Pvt. Ltd. Bangalore','df1j3i'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="gm-infinite-elegance-tower-1-bangalore/povp-6hd65c/"
+                          target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="GM Infinite Elegance Tower 1 in Margondanahalli" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/58c2a7f6916bf.jpg">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>GM Infinite Elegance Tower 1</h3>
+                            <div class="subtext">1BHK,2BHK,3BHK APARTMENT</div>
+                            <div class="subtext">Margondanahalli</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 35 L - 63 L <!-- <span></span> -->
+                            </div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>GM Infinite Dwelling (India) Pvt. Ltd. Bangalore
+                          </div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'6hd65c','GM Infinite Dwelling (India) Pvt. Ltd. Bangalore','df1j3i'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="carbon-cornerstone-bangalore/povp-zt0fad/" target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Carbon Cornerstone in Hennur Road" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/public/images/apartments/original_img/zt0fad.gif">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Carbon Cornerstone</h3>
+                            <div class="subtext">2BHK,3BHK APARTMENT</div>
+                            <div class="subtext">Hennur Road</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 95.97 L - 1.47 Cr
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Carbon Developers</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'zt0fad','Carbon Developers','rshwus'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="keya-homes-the-green-terraces-bangalore/povp-5zxo6m/"
+                          target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Keya Homes The Green Terraces in Electronic City Phase I" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/cf60127d027abf5.gif">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Keya Homes The Green Terraces</h3>
+                            <div class="subtext">1BHK,2BHK,3BHK APARTMENT</div>
+                            <div class="subtext">Electronic City Phase I</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 93.86 L - 93.86 L
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Keya Homes</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'5zxo6m','Keya Homes','8s8fur'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item ">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="saiven-silver-oaks-bangalore/povp-goapx3/" target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Saiven Silver Oaks in Sarjapur Road" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/cf5c752c72f3c93.gif">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Saiven Silver Oaks</h3>
+                            <div class="subtext">1BHK,2BHK APARTMENT</div>
+                            <div class="subtext">Sarjapur Road</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 26.05 L - 49.93 L
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Saiven Developers</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'goapx3','Saiven Developers','2oo8hb'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="kolte-patil-raaga-phase-ii-bangalore/povp-8yv3ab/" target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Kolte Patil Raaga Phase II in Hennur Road" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/cf6243e0c1f23b0.gif">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Kolte Patil Raaga Phase II</h3>
+                            <div class="subtext">2BHK,3BHK APARTMENT</div>
+                            <div class="subtext">Hennur Road</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 57.22 L - 68.31 L
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Kolte Patil Developers Ltd</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'8yv3ab','Kolte Patil Developers Ltd','pnp1n6'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="spad-classic-nakshatra-nestilo-bangalore/povp-y52y1s/"
+                          target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Spad Classic Nakshatra Nestilo in Whitefield" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/cf5b6552868049e.gif">
+                            <span class="ongoing">completed</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Spad Classic Nakshatra Nestilo</h3>
+                            <div class="subtext">2BHK,3BHK APARTMENT</div>
+                            <div class="subtext">Whitefield</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 62.06 L - 78 L
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Spad Classic Developers</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'y52y1s','Spad Classic Developers','dlmlwn'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                      <div class="cf-tile">
+                        <a onclick="CfAppActions.pushAnalytics('hp-recent-properties-click', 'view-details')"
+                          class="similarproj" href="godrej-reflections-bangalore/povp-c0uza4/" target="_blank">
+                          <div class="imagesad bgload">
+                            <img alt="Godrej Reflections in Harlur" class="cf-lazyload"
+                              data-src="https://teja12.kuikr.com/is/a/c/300x300/gallery_images/original/cf5aafa0b7deeb9.gif">
+                            <span class="ongoing">ongoing</span>
+                          </div>
+                          <div class="recentlypro">
+                            <h3>Godrej Reflections</h3>
+                            <div class="subtext">1BHK,2.5BHK,3BHK,4BHK APARTMENT</div>
+                            <div class="subtext">Harlur</div>
+                            <div class="subTile"><i class="fas fa-stop-circle"></i> 65.37 L - 2.81 Cr
+                              <!-- <span></span> --></div>
+                          </div>
+                        </a>
+                        <div class="bddls">
+                          <div class="builderDiv"><small>Builder</small>Godrej Properties Limited</div>
+                          <button class="btn orgin-line btn-similar-property"
+                            onclick="CfAppActions.toggleContactFormVisibility(this,'c0uza4','Godrej Properties Limited','x6mkde'); CfAppActions.pushAnalytics('hp-recent-properties-click', 'contact-button')">Contact</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a data-slide="prev" href="#hpsldrap" class="left carousel-control icon-navigate_before"></a>
+              <a data-slide="next" href="#hpsldrap" class="right carousel-control icon-navigate_next"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="group-forum">
+        <div class="row dashboard xsgroup">
+          <div class="col-xs-12 col-sm-6 col-md-6 tab-content">
+            <h2 class="section-header">CommonFloor Forum</h2>
+            <div class="p-box">
+              <div class="imgdsh">
+                <img alt="CommonFloor Forum" class="cf-lazyload"
+                  data-src="https://teja8.kuikr.com/cfassets/images/cf_dashboard_forum.png">
+              </div>
+              <div class="dhbox-h">
+                <div class="cfGdwon">Get answers about your project</div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p>A platform that brings together residents, owners and tenants in one place. </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <a data-tracking-id="hp-forum-click" href="forum/" target="_blank" class="btn cf-tracking-enabled"
+                      data-delegation-parent-class="user-dashboard">Visit Forum</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 tab-content">
+            <h2 class="section-header">CommonFloor Groups</h2>
+            <div class="p-box">
+              <div class="imgdsh">
+                <img alt="CommonFloor Groups" class="cf-lazyload"
+                  data-src="https://teja8.kuikr.com/cfassets/images/cf_dashboard_groups.jpg">
+              </div>
+              <div class="dhbox-h">
+                <div class="cfGdwon">Connect with your Neighbours</div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p>A platform that brings all residents together to build a happy community. </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <a data-tracking-id="hp-group-click" href="https://groups.commonfloor.com" target="_blank"
+                      class="btn cf-tracking-enabled" data-delegation-parent-class="user-dashboard">Join Group</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="home-page-city-modal">
+        <div class="modal fade cityselect_modal" id="homePageCityPopup" tabindex="-1" role="dialog"
+          aria-labelledby="mySmallModalLabel" data-backdrop="static" data-keyboard="false">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="cityFormModal">
+                <div class="selectBoxci">Select City</div>
+                <div class="selectcitydd">
+                  <input type="text" autocomplete="off" tabindex="" id="citySuggestInputHomePopup"
+                    placeholder="Select or Type your city" class="dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" onkeyup="CfAppActions.showCityAjaxHomePopup(this.value);"
+                    value="">
+                  <div id="scsrch_btn" class="scsrchbtn"><i class="icon-magnifier fas fa-search"></i></div>
+                  <ul class="cityselectautodd dropdown-menu" aria-labelledby="SelectCityInput"
+                    id="homePageCityPopupMain"></ul>
+                </div>
+                <div class="seleccityinfo">
+                  <div class="cityModaB">Popular Cities</div>
+                  <ul class="cityselectlist clearfix">
+                    <li role="option" data-value="70"
+                      onclick="CfAppActions.setCityValue('70','Bangalore','Bangalore division',0);">Bangalore</li>
+                    <li role="option" data-value="112"
+                      onclick="CfAppActions.setCityValue('112', 'Mumbai','Mumbai MMR',0);">Mumbai</li>
+                    <li role="option" data-value="6979"
+                      onclick="CfAppActions.setCityValue('6979', 'Navi Mumbai','Mumbai MMR',0);">Navi Mumbai</li>
+                    <li role="option" data-value="123"
+                      onclick="CfAppActions.setCityValue('123', 'Thane','Mumbai MMR',0);">Thane</li>
+                    <li role="option" data-value="36" onclick="CfAppActions.setCityValue('36', 'Delhi','Delhi NCR',0);">
+                      Delhi</li>
+                    <li role="option" data-value="372"
+                      onclick="CfAppActions.setCityValue('372', 'Gurgaon','Delhi NCR',0);">Gurgaon</li>
+                    <li role="option" data-value="6963"
+                      onclick="CfAppActions.setCityValue('6963', 'Noida','Delhi NCR',0);">Noida</li>
+                    <li role="option" data-value="118"
+                      onclick="CfAppActions.setCityValue('118', 'Pune','Pune Group',0);">Pune</li>
+                    <li role="option" data-value="149"
+                      onclick="CfAppActions.setCityValue('149', 'Chennai','Chennai - Kanchipuram',0);">Chennai</li>
+                    <li role="option" data-value="5"
+                      onclick="CfAppActions.setCityValue('5', 'Hyderabad','Hyderbad- Secunderabad',0);">Hyderabad</li>
+                    <li role="option" data-value="203"
+                      onclick="CfAppActions.setCityValue('203', 'Kolkata','Kolkata - Howrah',0);">Kolkata</li>
+                    <li role="option" data-value="353"
+                      onclick="CfAppActions.setCityValue('353','Ahmedabad','Ahmedabad- Gandhinagar',0);">Ahmedabad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+
+  <!-- container End Here -->
+  <div class="modal fade provident-modal" id="providentModal" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <button type="button" class="close cf-tracking-enabled" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M70.2 74c-1 0-1.9-.4-2.7-1.1L40 45.3 12.4 72.9c-1.5 1.5-3.8 1.5-5.3 0s-1.5-3.8 0-5.3L34.7 40 7.1 12.4c-1.5-1.5-1.5-3.8 0-5.3s3.8-1.5 5.3 0L40 34.7 67.6 7.1c1.5-1.5 3.8-1.5 5.3 0s1.5 3.8 0 5.3L45.3 40l27.6 27.6c1.5 1.5 1.5 3.8 0 5.3-.7.7-1.7 1.1-2.7 1.1z"
+                fill="#fff" fill-rule="evenodd"></path>
+            </svg></span>
+        </button>
+        <div class="modal-body" id="HomeBannerModal">
+          <div class="banner_text mrbt15">Closes in <span id="adTimer"></span> Sec</div>
+          <a href="https://www.providenthousing.com/providentcapella/?Primarysource=Digital%20Marketing&amp;secondarysource=real%25estate%25portals&amp;tertiarysource=commonfloor-roadblock"
+            target="_blank" rel="nofollow" class="boxclick">
+            <img id="adImage" alt="Provident" class="imgbanner">
+          </a>
+          <div class="banner_text mrtp15"><span data-dismiss="modal" aria-label="Close">Continue to Website <i
+                class="icon-right"></i></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="leftmenu">
+    <div class="topclosebutton cf-tracking-enabled" data-tracking-id="header-menu-close"
+      data-delegation-parent-class="header"><i class="icon-cross"></i></div>
+    <!-- <div class="centermenu" id="centermenu">
+      </div> -->
+    <div class="cflg" id="headermenu">
+      <ul>
+        <li>
+          <a href="" data-tracking-id="header-logo-click" class="logo_commonfloor">
+            <img class="cf-lazyload" data-src="https://teja8.kuikr.com/cfassets/images/header_cf_logo.png" width="180"
+              alt="Commonfloor - India's Premium Real Estate Portal">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="loginmenu" onclick="CfAppActions.getLogin('sign-in');" data-toggle="modal"
+      data-target=".bs-example-modal-sm" rel="nofollow" class="cf-tracking-enabled logintext"
+      data-tracking-id="header-login" data-delegation-parent-class="header">Log in to your account</div>
+    <div id="loggedinmenu" class="logwrapper">
+
+    </div>
+
+    <div class="centermenu" id="centermenu">
+
+    </div>
+
+  </div>
+  <div class="overlay"></div>
+  <!-- Lightbox Gallery start here -->
+  <div class="modal fade gallery-modal-lg" id="gallery-modal-lg-main"
+    style="visibility: hidden; opacity: 0; z-index: 1;" tabindex="-1" role="dialog"
+    aria-labelledby="myGalleryModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="closegallery" onclick="CfAppActions.dismissgallery();">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="modal-body" id="galleryModal">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade contact-form-modal" id="contact-form-modal" tabindex="-1" role="dialog"
+    aria-labelledby="mySmallModalLabel" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content contactform">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+          onclick="CfAppActions.unsetFormData();">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="modal-body" id="contactFormModal">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popupforgotp" id="optoverlay" style="display: none;"></div>
+  <div class="modal fade login-form-modal mdchh newmc new-login-modal" id="NewLoginModal" role="dialog"
+    aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content loginform">
+        <div class="rating-bar-header">
+          <span class="icon-viewall icon-arrow-left backarrow" onclick="CfAppActions.getLogin('sign-in');"
+            id="forget-arrow" style="display:none"></span>
+          <button type="button" class="close cf-tracking-enabled" data-dismiss="modal" aria-label="Close"
+            data-tracking-id="login-modal-close" onclick="{this.handleClose}"
+            data-delegation-parent-class="new-login-modal">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div id="login-popup-header" class="loginc">Login to CommonFloor</div>
+        </div>
+        <div class="modal-body" id="loginFormModal">
+        </div>
+        <span class="poweredby"><img class="cf-lazyload" alt="Powered by Quikr"
+            data-src="https://teja8.kuikr.com/cfassets/images/powered_by_quikr.png" width="140"></span>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <!--footer start here-->
+  <div id="productizeInfinityPin"></div>
+
+  <div id="modalContainer">
+    <div class="popupforgotp hide" id="modalOverlay"></div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="footercontentadd">
+            <p class="boldt">
+              The information provided herein have been collected from publicly
+              available sources, and is yet to be verified as per RERA guidelines.* <a href="javascript:void(0);"
+                onclick="$('.footerd').removeClass('hide');$(this).remove();">Read more..</a>
+            </p>
+            <p class="footerd hide">
+              The information sources used here include onsite interviews, marketing
+              material and other information sources on the internet. The information related
+              to ownership of this property are also based on material gathered from public
+              sources mentioned above or as has been declared to us by the owners/person
+              listing the property. These data have not yet been verified against
+              authentic documents, and are only indicative of the actual situation
+              of this property, project or land holding, and their ownership.
+            </p>
+            <p class="footerd hide">At CommonFloor, we provide this information to help our users find
+              publicly available data in a structured format. We are in the process
+              of connecting with the relevant owners and verifying the data as per
+              the provisions of the Real Estate (Regulation and Development) Act, 2016.
+              We will keep updating the information here regularly. While we believe
+              that the information provided to you is correct on the basis of the data
+              provided to us, please consider this data and information as indicative
+              and use your judgement and verify any information before making any
+              decision.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row more-footer-content">
+        <div class="col-xs-12">
+          <div class="bdtplgt mrbt30"></div>
+          <div class="footerlinktitle">Real Estate</div>
+          <ul class="fltitlelink">
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="bangalore-city/" data-tracking-id="footer-links"
+                title="Real Estate in Bangalore" data-delegation-parent-class="more-footer-content" target="">Bangalore
+                Real Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="mumbai-city/" data-tracking-id="footer-links"
+                title="Real Estate in Mumbai" data-delegation-parent-class="more-footer-content" target="">Mumbai Real
+                Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="delhi-city/" data-tracking-id="footer-links"
+                title="Real Estate in Delhi" data-delegation-parent-class="more-footer-content" target="">Delhi Real
+                Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="pune-city/" data-tracking-id="footer-links"
+                title="Real Estate in Pune" data-delegation-parent-class="more-footer-content" target="">Pune Real
+                Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="zirakpur-city/" data-tracking-id="footer-links"
+                title="Real Estate in Zirakpur" data-delegation-parent-class="more-footer-content" target="">Zirakpur
+                Real Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="gurgaon-city/" data-tracking-id="footer-links"
+                title="Real Estate in Gurgaon" data-delegation-parent-class="more-footer-content" target="">Gurgaon Real
+                Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="noida-city/" data-tracking-id="footer-links"
+                title="Real Estate in Noida" data-delegation-parent-class="more-footer-content" target="">Noida Real
+                Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="hyderabad-city/" data-tracking-id="footer-links"
+                title="Real Estate in Hyderabad" data-delegation-parent-class="more-footer-content" target="">Hyderabad
+                Real Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="chennai-city/" data-tracking-id="footer-links"
+                title="Real Estate in Chennai" data-delegation-parent-class="more-footer-content" target="">Chennai Real
+                Estate</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="kolkata-city/" data-tracking-id="footer-links"
+                title="Real Estate in Kolkata" data-delegation-parent-class="more-footer-content" target="">Kolkata Real
+                Estate</a>
+            </li>
+          </ul>
+          <div class="footerlinktitle">Buy Property</div>
+          <ul class="fltitlelink">
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="bangalore-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Bangalore"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Bangalore</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="mumbai-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Mumbai"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Mumbai</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="delhi-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Delhi"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Delhi</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="pune-property/for-sale/" data-tracking-id="footer-links"
+                title="Properties for Sale in Pune" data-delegation-parent-class="more-footer-content" target="">Buy
+                Property in Pune</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="zirakpur-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Zirakpur"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Zirakpur</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="gurgaon-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Gurgaon"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Gurgaon</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="noida-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Noida"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Noida</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="hyderabad-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Hyderabad"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Hyderabad</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="chennai-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Chennai"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Chennai</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="kolkata-property/for-sale/"
+                data-tracking-id="footer-links" title="Properties for Sale in Kolkata"
+                data-delegation-parent-class="more-footer-content" target="">Buy Property in Kolkata</a>
+            </li>
+          </ul>
+          <div class="footerlinktitle">Properties For Rent</div>
+          <ul class="fltitlelink">
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="bangalore-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Bangalore"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Bangalore</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="mumbai-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Mumbai"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Mumbai</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="delhi-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Delhi"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Delhi</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="pune-property/for-rent/" data-tracking-id="footer-links"
+                title="Properties for Rent in Pune" data-delegation-parent-class="more-footer-content" target="">Rent
+                Property in Pune</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="zirakpur-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Zirakpur"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Zirakpur</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="gurgaon-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Gurgaon"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Gurgaon</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="noida-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Noida"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Noida</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="hyderabad-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Hyderabad"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Hyderabad</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="chennai-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Chennai"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Chennai</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="kolkata-property/for-rent/"
+                data-tracking-id="footer-links" title="Properties for Rent in Kolkata"
+                data-delegation-parent-class="more-footer-content" target="">Rent Property in Kolkata</a>
+            </li>
+          </ul>
+          <div class="footerlinktitle">Residential Projects</div>
+          <ul class="fltitlelink">
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="bangalore-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Bangalore"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Bangalore</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="mumbai-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Mumbai"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Mumbai</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="delhi-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Delhi"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Delhi</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="pune-property/projects/" data-tracking-id="footer-links"
+                title="Residential Projects in Pune" data-delegation-parent-class="more-footer-content"
+                target="">Projects in Pune</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="zirakpur-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Zirakpur"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Zirakpur</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="gurgaon-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Gurgaon"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Gurgaon</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="noida-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Noida"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Noida</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="hyderabad-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Hyderabad"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Hyderabad</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="chennai-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Chennai"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Chennai</a>
+            </li>
+            <li>
+              <a class="cf-tracking-enabled anchor-class" href="kolkata-property/projects/"
+                data-tracking-id="footer-links" title="Residential Projects in Kolkata"
+                data-delegation-parent-class="more-footer-content" target="">Projects in Kolkata</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="bdtplgt mrtp20 mrbt20"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="footercontentadd">
+            <p class="boldt">Commonfloor.com is India's premium real estate portal where users can find Independent
+              Houses / Villas, Apartments/Flats and Plots for sale and rent in 400+ cities across India. CommonFloor
+              helps the property seeker to find Resale properties, Residential Projects and Owner properties in
+              Bangalore, Gurgaon,Noida, Chennai, Hyderabad, Mumbai, Ahmedabad,Kolkata and other cities. Commonfloor
+              provides complete details of Project launches, under construction projects and ready-to-move projects with
+              detailed description of locality, builder, price trends and features.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-2 about">
+          <div class="footerlink">
+            <div class="footerTag">About</div>
+            <ul class="uls">
+              <li><a class="cf-tracking-enabled" data-tracking-id="footer-links-static"
+                  data-delegation-parent-class="about" href="about-us/" title="About CommonFloor" target="_blank">About
+                  Us</a></li>
+              <li><a class="cf-tracking-enabled" data-tracking-id="footer-links-static"
+                  data-delegation-parent-class="about" href="http://www.quikr.com/html/jobs.php" rel="nofollow"
+                  title="Careers" target="_blank">Careers</a></li>
+              <li><a class="cf-tracking-enabled" data-tracking-id="footer-links-static"
+                  data-delegation-parent-class="about" href="guide/" title="CommonFloor Blogs" target="_blank">Blogs</a>
+              </li>
+              <li><a class="cf-tracking-enabled" data-tracking-id="footer-links-static"
+                  data-delegation-parent-class="about" href="cancellation-refund/"
+                  title="Cancellation and Refund Policy" target="_blank">Cancellation/Refund</a></li>
+              <li><a class="cf-tracking-enabled" data-tracking-id="footer-links-static"
+                  data-delegation-parent-class="about" href="terms-conditions/" title="Terms &amp; Conditions"
+                  target="_blank">Terms &amp; Conditions</a></li>
+              <li><a class="cf-tracking-enabled" data-tracking-id="footer-links-static"
+                  data-delegation-parent-class="about" href="contactus/" title="Contact Us" target="_blank">Contact</a>
+              </li>
+              <li><a class="" href="https://www.quikr.com" target="_blank">Quikr</a></li>
+              <li><a class="" href="https://www.indiaproperty.com" target="_blank">India Property</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2 products">
+          <div class="footerlink">
+            <div class="footerTag">Products</div>
+            <ul class="uls">
+              <li><a class="cf-tracking-enabled" href="https://www.quikr.com/coworking"
+                  data-tracking-id="footer-links-static" title="Quikr Cowork" data-delegation-parent-class="products"
+                  target="_blank">Quikr Cowork</a></li>
+              <li><a class="cf-tracking-enabled" href="https://groups.commonfloor.com/"
+                  data-tracking-id="footer-links-static" title="Apartment Management Software"
+                  data-delegation-parent-class="products" target="">Groups</a></li>
+              <li><a class="cf-tracking-enabled" href="nm/authorize/signin/redirect_url%3D/nmd/user-dashboard.html"
+                  data-tracking-id="footer-links-static" rel="nofollow" title="Agents"
+                  data-delegation-parent-class="products" target="">Agents</a></li>
+              <li><a class="cf-tracking-enabled" href="guide/" data-tracking-id="footer-links-static"
+                  title="Real Estate Guide" data-delegation-parent-class="products" target="">Guide</a></li>
+              <li><a class="cf-tracking-enabled" href="guide/" data-tracking-id="footer-links-static"
+                  title="Real Estate News" data-delegation-parent-class="products" target="">News</a></li>
+              <li><a class="cf-tracking-enabled" href="forum/" data-tracking-id="footer-links-static"
+                  title="Real Estate Forum" data-delegation-parent-class="products" target="">Forum</a></li>
+              <li><a class="cf-tracking-enabled" href="retina/" data-tracking-id="footer-links-static"
+                  title="Virtual Reality" data-delegation-parent-class="products" target="">Retina</a></li>
+              <li><a class="cf-tracking-enabled" href="live-in-tour/" data-tracking-id="footer-links-static"
+                  title="360 degree view of Property" data-delegation-parent-class="products" target="">Live-in-tour</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 apps">
+          <div class="footerlink">
+            <div class="footerTag">Experience Commonfloor App on Mobile</div>
+            <ul>
+              <li>
+                <a class="cf-tracking-enabled" data-tracking-id="hp-footer-anroid" data-delegation-parent-class="apps"
+                  title="Android Property Search App"
+                  href="http://a.localytics.com/android?id=com.commonfloor&amp;referrer=utm_source=other_commonfloor&amp;utm_medium=pcweb&amp;utm_content=home&amp;utm_term=&amp;utm_campaign=PC-Footer"
+                  target="_blank" rel="nofollow">
+                  <div class="cf-appbtn play">
+                    <svg width="28px" height="28px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd"
+                        sketch:type="MSPage">
+                        <path
+                          d="M0.644744964,21.9650748 C0.254202901,21.8598787 0,21.4721398 0,20.8721315 L0,1.06673994 C0,0.511040818 0.215237322,0.13626225 0.556430066,3.90798505e-14 L0.556430066,3.90798505e-14 L10.2892072,11.0372633 L0.644744964,21.9650748 L0.644744964,21.9650748 Z M1.98453168,21.5446698 L13.6997237,14.9048922 L10.8463222,11.6690486 L1.98453168,21.5446698 L1.98453168,21.5446698 Z M13.7803956,7.08151669 L2.22846736,0.532749802 L10.8632139,10.3868759 L13.7803956,7.08151669 L13.7803956,7.08151669 Z M14.5641845,7.52584521 L19.0895939,10.0912915 C19.946426,10.577028 19.9542618,11.36003 19.0895939,11.8500947 L14.4496961,14.479833 L11.4233025,11.026059 L14.5641845,7.52584521 L14.5641845,7.52584521 Z"
+                          id="google-play-copy" fill="#ffffff" sketch:type="MSShapeGroup"></path>
+                      </g>
+                    </svg>
+                    <small>Android App on</small><span>Google Play</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!--
+            <p class="appdnd"><span>(OR)</span> Give a missed call to 1800 180 180 180 and get link to download App</p>
+            -->
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 cnct-wt-us">
+          <div class="footerlink">
+            <div class="cftm">
+              <img class="cf-lazyload" alt="Commonfloor - India's Premium Real Estate Portal"
+                data-src="https://teja8.kuikr.com/cfassets/images/CommonFloor_footer_logo.png">
+            </div>
+            <p class="cprgt">Copyright 2007-23 <br>All rights reserved.</p>
+            <div class="kit mrtp20">Keep in Touch</div>
+            <ul>
+              <li>
+                <a class="cf-tracking-enabled" data-tracking-id="footer-share-facebook"
+                  data-delegation-parent-class="cnct-wt-us" href="https://www.facebook.com/commonfloor.com" title=""
+                  target="_blank" rel="nofollow"><i class="icon-Facebook-01"></i></a>
+                <a class="cf-tracking-enabled" data-tracking-id="footer-share-twitter"
+                  data-delegation-parent-class="cnct-wt-us" href="https://twitter.com/commonfloor" title=""
+                  target="_blank" rel="nofollow"><i class="icon-Twitter-01"></i></a>
+                <a class="cf-tracking-enabled" data-tracking-id="footer-share-youtube"
+                  data-delegation-parent-class="cnct-wt-us" href="https://www.youtube.com/user/commonfloor" title=""
+                  target="_blank" rel="nofollow"><i class="icon-Youtube-01"></i></a>
+                <a class="cf-tracking-enabled" data-tracking-id="footer-share-slideshare"
+                  data-delegation-parent-class="cnct-wt-us" href="http://www.slideshare.net/CommonFloor" title=""
+                  target="_blank" rel="nofollow"><i class="icon-Slideshare-01"></i></a>
+                <div class="clearfix"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script defer=""
+    src="https://teja8.kuikr.com/cfassets/js/polyfill-intersection-observer-7a3beed851b6712afdd.js"></script>
+
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/vendor_6-407ac8bb4e0f9fa8ed6.js"></script>
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/vendor_5-9eb5097a0bf4346afca.js"></script>
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/vendor_4-103d6c20b14f111cc4d.js"></script>
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/vendor_3-ff677971656d78f0841.js"></script>
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/vendor_2-cce95dbfa503826dc5c.js"></script>
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/vendor_1-d5eb47b7bf3a27ce152.js"></script>
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/start-e75abb287bb743ff401.js"></script>
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/page-de6fec1d1bc1dc17dd4.js"></script>
+
+  <script id="qrumScript" type="text/javascript"></script>
+  <script>
+    var qrumScript = document.getElementById("qrumScript");
+    function checkParams(event) {
+      initializeRUM({ PTYPE: '030100', JKID: '' });
+    }
+    qrumScript.addEventListener("load", checkParams, false);
+    qrumScript.src = "https://teja8.kuikr.com/cfassets/js/qrum-f908ece4e0312235ce7.js";
+  </script>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3BXFG4" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Script for Tracking Event -->
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/qanalytics_cf-15298ea157e49f7237d.js"></script>
+  <!-- End Script for Tracking Event -->
+  <script defer="" src="https://teja8.kuikr.com/cfassets/js/index-fb262731c5862013d0f.js"></script>
+  <script "1"="" defer="" src="https://teja8.kuikr.com/cfassets/js/lotame-2702d17b79b65441a43.js"></script>
+  <script
+    type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.eu01.nr-data.net", "licenseKey": "NRJS-975c7885532d44c79eb", "applicationID": "102821505", "transactionName": "MhBSZQoZXkEAVhFfWwtac0QLDF9fTl0KW1E=", "queueTime": 0, "applicationTime": 323, "atts": "HldRE0IDTU8=", "errorBeacon": "bam.eu01.nr-data.net", "agent": "" }</script>
+
+
+  <div id="myModal" class="modal fade liveintourmodal" aria-hidden="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="title-bar"></h3>
+          <div class="close icon-cross" data-dismiss="modal" aria-hidden="true"></div>
+        </div>
+        <div class="modal-body">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html><!-- modal section -->
